@@ -1,6 +1,9 @@
-const SERVER_URL = "http://localhost:8081";
+import {
+   SERVER_URL,
+   MESSAGE_SEND_ROUTE,
+} from '../ENV.js';
 
-(function iife() {
+export default function message() {
    const submitBtn = document.getElementById('message_submit_button');
    if (!submitBtn) return;
 
@@ -27,7 +30,9 @@ const SERVER_URL = "http://localhost:8081";
          message: messageField.value,
       });
 
-      const response = await fetch(SERVER_URL + '/msg-send', {
+      const sendMsgURL = new URL(MESSAGE_SEND_ROUTE, SERVER_URL).href;
+
+      const response = await fetch(sendMsgURL, {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
          body,
@@ -36,10 +41,10 @@ const SERVER_URL = "http://localhost:8081";
       if (!response.ok) return;
       const result = await response.json();
 
-      elements.forEach( element => {
+      elements.forEach(element => {
          element.value = '';
       });
       console.log(result);
 
    });
-})();
+}
