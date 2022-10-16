@@ -7,3 +7,8 @@
 4) Enter command `git add .`.
 5) Enter command `git commit -m "brief message"`. The `"brief message"` can be replaced with any message of your choice (e.g.`"added update to homepage"`).
 6) Enter command `git push origin master`.
+
+#### Things to add (recommendation)
+- Form custom validation
+- Form loading
+- Form submit success/error
