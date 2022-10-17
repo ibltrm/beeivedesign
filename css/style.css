@@ -1,5 +1,3 @@
- @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
- @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
  :root {
      --header-height: 3rem;
