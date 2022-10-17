@@ -1,4 +1,7 @@
-//header smaller screen
+import Glide from '../node_modules/@glidejs/glide/dist/glide.js'
+
+console.log({ Glide })
+    //header smaller screen
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
