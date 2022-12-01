@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +24,8 @@ html {
     --command-btn: #fff;
     --nav-hover: rgb(47, 47, 47);
     --highlight: #ee7db6;
-    ;
+    --footer: rgba(255, 255, 255, 0.422);
+    --designed-by: rgba(233, 233, 233, 0.8);
 }
 
 html[data-theme='light'] {
@@ -46,12 +48,14 @@ html[data-theme='light'] {
     --command-btn: #000;
     --nav-hover: #b27cad;
     --highlight: #cb7dc3;
+    --footer: rgba(0, 0, 0, 0.489);
+    --designed-by: rgb(92, 49, 119);
 }
 
 body {
     background: var(--background);
     transition: 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -154,6 +158,7 @@ label {
     float: right;
     border-radius: 100px;
     position: relative;
+    margin-top: 0;
 }
 
 label:after {
@@ -187,61 +192,6 @@ section {
     margin: 0;
     padding: 0;
 }
-
-
-/*.command-container {
-    margin: 0;
-    padding: 5% 5% 5% 5px;
-    width: 30%;
-}
-
-.cbtn {
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    width: 250px;
-    cursor: pointer;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.btn-commands {
-    color: var(--command-btn);
-    transition: all 0.3s;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border-radius: 50px;
-    background-color: var(--command-note)
-}
-
-.btn-commands span {
-    transition: all 0.5s;
-}
-
-.btn-commands:hover {
-    background-color: var(--command-hover)
-}
-
-.note-content.open {
-    display: block;
-    width: 60%;
-}
-
-.note-content {
-    background: var(--command-note);
-    height: 20%;
-    width: 60%;
-    font-family: Arial, Helvetica, sans-serif;
-    display: none;
-    padding: 15px 20px 20px 20px;
-    list-style-type: none;
-    position: relative;
-    color: var(--command-btn);
-    font-size: 0.9rem;
-    border-radius: 5px;
-}*/
 
 .container {
     justify-content: center;
@@ -376,12 +326,18 @@ section {
     width: 100%;
     height: 2rem;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 60%;
     margin: auto;
     padding: 0 0;
-    color: var(--result-panel);
+    color: var(--footer);
     /*text-transform: uppercase;*/
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--designed-by);
+    font-style: italic;
 }
 
 @media screen and (max-width: 300px) {
@@ -493,25 +449,6 @@ section {
     }
 }
 
-
-/*@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
-    .command-container {
-        width: 30%;
-    }
-    .note-content.open {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1300px) and (orientation: landscape) {
-    .command-container {
-        width: 28%;
-    }
-    .note-content.open {
-        width: 80%;
-    }
-}*/
-
 @media screen and (max-width: 655px) and (orientation: landscape) {
     .btn {
         font-size: 0.8rem;
@@ -531,7 +468,3 @@ section {
         margin-right: auto;
     }
 }
-
-
-/*FIX FOOTER HEIGHT FOR LANDSCAPE 
-// CHANGE DESIGN OF THE KEYBOARD COMMANDS
