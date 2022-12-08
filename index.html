@@ -17,22 +17,22 @@
 </head>
 
 <body>
-    <a href="#eng" data-reload>English &vert; </a>
-    <a href="#pt" data-reload>Português</a>
+    <button id="english">English</button>
+    <button id="portuguese">Português</button>
     <div id="navbar">
         <div class="logo">
             <img src="images/beeive-icon.png" class="logo-bs">
             <h1 class="logo-h1"> beeive.</h1>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active nav-link " id="nav1">Home</a></li>
-            <!--li><a href="#home" class="active nav-link" id="pt">Página Inicial</a></li-->
-            <li><a href="#about" class="nav-link" id="nav2">About</a></li>
-            <!--li><a href="#about" class="nav-link" id="pt">Sobre</a></li-->
-            <li><a href="#portfolio" class="nav-link" id="nav3">Portfolio</a></li>
-            <!--li><a href="#portfolio" class="nav-link" id="pt">Portfólio</a></li-->
-            <li><a href="#contact" class="nav-link" id="nav4">Contact</a></li>
-            <!--li><a href="#contact" class="nav-link" id="pt">Contato</a></li-->
+            <span class="en"> <li><a href="#home" class="active nav-link ">Home</a></li> </span>
+            <span class="pt">  <li><a href="#home" class="active nav-link">Página Inicial</a></li> </span>
+            <span class="en">  <li><a href="#about" class="nav-link">About</a></li> </span>
+            <span class="pt">  <li><a href="#about" class="nav-link" >Sobre</a></li> </span>
+            <span class="en">   <li><a href="#portfolio" class="nav-link">Portfolio</a></li> </span>
+            <span class="pt">  <li><a href="#portfolio" class="nav-link">Projetos</a></li></span>
+            <span class="en">   <li><a href="#contact" class="nav-link">Contact</a></li></span>
+            <span class="pt">  <li><a href="#contact" class="nav-link">Contato</a></li></span>
         </ul>
     </div>
     <div class="header" id="header">
@@ -353,54 +353,6 @@
                 })
             </script>
 
-            <script>
-                let dataReload = document.querySelectorAll("[data-reload]");
-                console.log();
-                //language translations
-                let language = {
-                    eng: {
-                        navigation1: "Home",
-                        navigation2: "About",
-                        navigation3: "Portfolio",
-                        navigation4: "Contact",
-                        navigationsmall1: "Home",
-                        navigationsmall2: "About",
-                        navigationsmall3: "Portfolio",
-                        navigationsmall4: "Contact"
-                    },
-                    pt: {
-                        navigation1: "Página Inicial",
-                        navigation2: "Sobre",
-                        navigation3: "Projetos",
-                        navigation4: "Contato",
-                        navigationsmall1: "Página Inicial",
-                        navigationsmall2: "Sobre",
-                        navigationsmall3: "Projetos",
-                        navigationsmall4: "Contato",
-                    }
-                };
-
-                //define language via window hash
-                if (window.location.hash) {
-                    if (window.location.hash === "#pt") {
-                        nav1.textContent = language.pt.navigation1;
-                        nav2.textContent = language.pt.navigation2;
-                        nav3.textContent = language.pt.navigation3;
-                        nav4.textContent = language.pt.navigation4;
-                        navs1.textContent = language.pt.navigationsmall1;
-                        navs2.textContent = language.pt.navigationsmall2;
-                        navs3.textContent = language.pt.navigationsmall3;
-                        navs4.textContent = language.pt.navigationsmall4;
-                    }
-                }
-
-                for (i = 0; i <= dataReload.length; i++) {
-                    console.log()
-                    dataReload[i].addEventListener("click", function(event) {
-                        location.reload(true);
-                    });
-                }
-            </script>
 </body>
 
 </html>

@@ -71,6 +71,14 @@
         overflow-x: hidden;
     }
     
+    .en {
+        display: block;
+    }
+    
+    .pt {
+        display: none;
+    }
+    
     ul {
         list-style: none;
     }
