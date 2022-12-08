@@ -17,17 +17,22 @@
 </head>
 
 <body>
-
+    <a href="#eng" data-reload>English &vert; </a>
+    <a href="#pt" data-reload>Português</a>
     <div id="navbar">
         <div class="logo">
             <img src="images/beeive-icon.png" class="logo-bs">
             <h1 class="logo-h1"> beeive.</h1>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#home" class="active nav-link " id="nav1">Home</a></li>
+            <!--li><a href="#home" class="active nav-link" id="pt">Página Inicial</a></li-->
+            <li><a href="#about" class="nav-link" id="nav2">About</a></li>
+            <!--li><a href="#about" class="nav-link" id="pt">Sobre</a></li-->
+            <li><a href="#portfolio" class="nav-link" id="nav3">Portfolio</a></li>
+            <!--li><a href="#portfolio" class="nav-link" id="pt">Portfólio</a></li-->
+            <li><a href="#contact" class="nav-link" id="nav4">Contact</a></li>
+            <!--li><a href="#contact" class="nav-link" id="pt">Contato</a></li-->
         </ul>
     </div>
     <div class="header" id="header">
@@ -39,24 +44,37 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link" id="navs1">
                             <i class="fa-solid fa-house nav__icon"></i> Home
                         </a>
+                        <!--a href="#home" class="nav__link" id="pt">
+                            <i class="fa-solid fa-house nav__icon"></i> Página Inicial
+                        </a-->
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" id="navs2">
                             <i class="fa-solid fa-user nav__icon"></i> About
                         </a>
+                        <!--a href="#about" class="nav__link" id="pt">
+                            <i class="fa-solid fa-user nav__icon"></i> Sobre
+                            
+                        </a-->
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link" id="navs3">
                             <i class="fa-solid fa-image nav__icon"></i> Portfolio
                         </a>
+                        <!--a href="#portfolio" class="nav__link" id="pt">
+                            <i class="fa-solid fa-image nav__icon"></i> Portfólio
+                        </a-->
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="#contact" class="nav__link" id="navs4">
                             <i class="fa-solid fa-paper-plane nav__icon"></i> Contact
                         </a>
+                        <!--a href="#contact" class="nav__link" id="pt">
+                            <i class="fa-solid fa-paper-plane nav__icon"></i> Contact
+                        </a-->
                     </li>
                 </ul>
                 <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
@@ -73,7 +91,8 @@
             <div class="row">
                 <!--h1>Home</h1-->
                 <h1>invent&lpar;ive&rpar;. attract&lpar;ive&rpar;. impress&lpar;ive&rpar;.</h1>
-                <p>Designing websites to emphasize what makes your business unique, connect you with new people who will love what you do, and bring up stronger relationships with your existing customers.</p>
+                <p id="en">Designing websites to emphasize what makes your business unique, connect you with new people who will love what you do, and bring up stronger relationships with your existing customers.</p>
+                <!--p id="pt">Projetando sites para enfatizar o que torna sua empresa única, conectá-lo a novas pessoas que vão adorar o que você faz e criar relacionamentos mais fortes com seus clientes existentes.</p-->
                 <img src="images/bee-bg1.png" class="beeive-logo-main-page">
             </div>
 
@@ -87,36 +106,52 @@
                     <img src="images/profile-img.png">
                 </div>
                 <div class="about-1st-col">
-                    <h1 class="title justify"> Hello&excl; <img src="images/3d-heart.png" class="heart"></h1>
-                    <h2 class="subtitle"> I&apos;m Isabella, a freelancer web designer and developer based in São Paulo, Brazil, creating unique, creative digital experiences.</h2>
+                    <h1 class="title justify" id="en"> Hello&excl; <img src="images/3d-heart.png" class="heart"></h1>
+                    <!--h1 class="title justify" id="pt"> Oi&excl; <img src="images/3d-heart.png" class="heart"></h1-->
+                    <h2 class="subtitle" id="en"> I&apos;m Isabella, a freelancer web designer and developer based in São Paulo, Brazil, creating unique, creative digital experiences.</h2>
+                    <!--h2 class="subtitle" id="pt"> Eu sou a Isabella, web designer e desenvolvedora freelancer baseada em São Paulo, Brasil, criando experiências digitais únicas e criativas.</h2-->
                     <!--p>Hi! My name is Isabella Beltrame and I'm a Brazil-based freelance web designer and developer.</p-->
-                    <p>My work is focused on helping people, brands and small businesses express unique ideas into life with design and technology.
+                    <p id="en">My work is focused on helping people, brands and small businesses express unique ideas into life with design and technology.
                     </p>
-                    <p>I strive for perfect, beautiful execution and great user experience. I enjoy creating websites that focus on user experience and functionality, while maintaining principles of good design and beauty.
+                    <!--p id="pt">Meu trabalho é focado em ajudar pessoas, marcas e pequenas empresas a dar vida a ideias únicas com design e tecnologia.
+                    </p-->
+                    <p id="en">I strive for perfect, beautiful execution and great user experience. I enjoy creating websites that focus on user experience and functionality, while maintaining principles of good design and beauty.
                     </p>
-                    <p>My design inspiration is somewhat of minimalist and I love working with pastel colors.
+                    <!--p id="pt">Eu me esforço para uma execução perfeita e bonita e uma ótima experiência do usuário. Gosto de criar sites que se concentram na experiência do usuário e na funcionalidade, mantendo os princípios de bom design e beleza.
+                    </p-->
+                    <p id="en">My design inspiration is somewhat of minimalist and I love working with pastel colors.
                     </p>
-                    <p>When I&apos;m not behind my computer, you can find me obsessing over food, cats, skincare, and korean dramas. </p>
+                    <!--p id="pt">Minha inspiração de design é um pouco minimalista e adoro trabalhar com cores pastéis.
+                    </p-->
+                    <p id="en">When I&apos;m not behind my computer, you can find me obsessing over food, cats, skincare, and korean dramas. </p>
+                    <!--p id="pt">Quando não estou atrás do meu computador, você pode me encontrar obcecada por comida, gatos, cuidados com a pele e dramas coreanos.</p-->
 
                 </div>
                 <div class="skills" id="skills">
-                    <h2 class="section__title">What I do</h2>
+                    <h2 class="section__title" id="en">What I do</h2>
+                    <!--h2 class="section__title" id="pt">O que eu faço</h2-->
                     <div class="row-icons">
                         <div class="abt-container">
                             <img class="icon" src="images/responsive.png" alt="Responsive Web Design Icon">
-                            <p class="skills-title">Responsive Web Design</p>
-                            <p class="description">I create website pages that adapts to all devices and screen sizes.</p>
+                            <p class="skills-title" id="en">Responsive Web Design</p>
+                            <!--p class="skills-title" id="pt">Web Design Responsivo</p-->
+                            <p class="description" id="en">I create website pages that adapts to all devices and screen sizes.</p>
+                            <!--p class="description" id="pt">Eu crio páginas de sites que se adaptam a todos os dispositivos e tamanhos de tela.</p-->
                         </div>
                         <div class="abt-container">
                             <img class="icon" src="images/ui-ux-design.png">
-                            <p class="skills-title">UI/UX Design</p>
-                            <p class="description">I design aesthetic elements and a intuitive user experience.</p>
+                            <p class="skills-title" id="en">UI/UX Design</p>
+                            <!--p class="skills-title" id="pt">Design UI/UX </p-->
+                            <p class="description" id="en">I design aesthetic elements and a intuitive user experience.</p>
+                            <!--p class="description" id="pt">Eu desenho elementos estéticos e uma experiência de usuário intuitiva.</p-->
                         </div>
                         <div class="abt-container">
                             <img class="icon" src="images/development.png" alt="Development Icon">
-                            <p class="skills-title">Development</p>
-                            <p class="description" d> I write the code that makes your website work and keep the maintenance.
-                            </p>
+                            <p class="skills-title" id="en">Development</p>
+                            <!--p class="skills-title" id="pt">Desenvolvimento</p-->
+                            <p class="description" id="en"> I write the code that makes your website work and keep the maintenance.
+                                <!--p class="description" id="pt"> Eu escrevo o código que faz seu site funcionar e faço a manutenção.
+                            </p-->
                         </div>
                     </div>
                 </div>
@@ -126,7 +161,8 @@
         <!--PORTFOLIO-->
         <div id="portfolio" class="section">
             <div class="container">
-                <h1 class="title">My Work</h1>
+                <h1 class="title" id="en">My Work</h1>
+                <!--h1 class="title" id="pt">Meu trabalho</h1-->
                 <div class="work-list">
                     <div class="glide">
                         <div class="glide__track" data-glide-el="track">
@@ -136,9 +172,12 @@
                                         <a href="thrift-store/store-index.html"> <img src="images/e-commerce-store.png" alt="">
                                         </a>
                                         <div class="port-description">
-                                            <h3>eCommerce Website</h3>
-                                            <p>A resposive online thrift store design in PT-BR that includes main, products, cart, contact and login page.
+                                            <h3 id="en">eCommerce Website</h3>
+                                            <!--h3 id="pt">eCommerce Website</h3-->
+                                            <p id="en">A resposive online thrift store design in PT-BR that includes main, products, cart, contact and login page.
                                             </p>
+                                            <!--p id="pt">Um brechó online com design responsivo que inclui página principal, produtos, carrinho, contato e login.
+                                            </p-->
                                             <a href="thrift-store/store-index.html"><i
                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
@@ -149,8 +188,10 @@
                                     <div class="port-grid">
                                         <a href="JS Calculator/calculator-index.html"><img src="images/calculator-mode-switch.png" alt=""></a>
                                         <div class="port-description">
-                                            <h3>Calculator</h3>
-                                            <p>Inspired in Iphone calculator, has dark&sol;light mode, a responsive design and complete functionality. As my very first JavaScript project, my fiancé helped me out.</p>
+                                            <h3 id="en">Calculator</h3>
+                                            <!--h3 id="pt">Calculadora</h3-->
+                                            <p id="en">Inspired in Iphone calculator, has dark&sol;light mode, a responsive design and complete functionality. As my very first JavaScript project, my fiancé helped me out.</p>
+                                            <!--p id="pt">Inspirado na calculadora do Iphone, possui modo claro&sol;escuro, design responsivo e funcionalidade completa. Sendo meu primeiro projeto focado em JavaScript, meu noivo me deu uma mãozinha.</p-->
                                             <a href="JS Calculator/calculator-index.html"><i
                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
@@ -160,8 +201,10 @@
                                     <div class="port-grid">
                                         <img src="images/timer-in-progress.png" alt="">
                                         <div class="port-description">
-                                            <h3>Pomodoro Timer</h3>
-                                            <p>Easy to use pomodoro timer to improve your working and studying efficiency, with a simple clear design.</p>
+                                            <h3 id="en">Pomodoro Timer</h3>
+                                            <!--h3 id="pt">Temporizador Pomodoro</h3-->
+                                            <p id="en">Easy to use pomodoro timer to improve your working and studying efficiency, with a simple clear design.</p>
+                                            <!--p id="pt">Temporizador de método pomodoro de fácil uso para melhorar sua eficiência no trabalho e estudos. Possui um design simples e clean. Ainda em desenvolvimento.</p-->
                                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
                                     </div>
@@ -184,8 +227,10 @@
 
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="title">Contact Me</h1>
-                        <p>I&apos;m always open to hearing about new projects.</p>
+                        <h1 class="title" id="en">Contact Me</h1>
+                        <!--h1 class="title" id="pt">Contato</h1-->
+                        <p id="en">I&apos;m always open to hearing about new projects.</p>
+                        <!--p id="pt">Estou sempre aberta para ouvir sobre novos projetos!</p-->
                         <p><a href="mailto:beeive.design@outlook.com" class="mail"><i class="fa-solid fa-paper-plane"></i>
                         beeive.design@outlook.com</a></p>
                         <p><i class="fa-solid fa-phone"></i> +55 11 98409-3314</p>
@@ -198,15 +243,19 @@
                     </div>
                     <div class="contact-right">
                         <form id="form" onsubmit="return false">
-                            <input id="message_sender" type="text" name="Name" placeholder="Your Name">
+                            <input id="message_sender en" type="text" name="Name" placeholder="Your Name">
+                            <!--input id="message_sender pt" type="text" name="Name" placeholder="Nome"-->
                             <div class="inputBox">
-                                <input type="text" name="email" id="email" placeholder="Your Email" onkeydown="validation()">
+                                <input type="text" name="email" id="email en" placeholder="Your Email" onkeydown="validation()">
+                                <!--input type="text" name="email" id="email pt" placeholder="Email" onkeydown="validation()"-->
                                 <span id="text"></span>
                             </div>
-                            <textarea id="message_message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <textarea id="message_message en" name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <!--textarea id="message_message pt" name="Message" rows="6" placeholder="Deixe aqui sua mensagem"></textarea-->
                             <button id="message_submit_button" class="btn btn2 button-spin submit-disabled" type="button">
                         <i class="fa-solid fa-circle-notch icon spinner"></i>
-                        <span class="btn-text">Submit</span>
+                        <span class="btn-text" id="en">Submit</span>
+                        <!--span class="btn-text" id="pt">Enviar</span-->
                      </button>
                             <!--button id="message_submit_button" class="btn btn2 submit-disabled" onclick="openPopup()">Submit</button-->
                         </form>
@@ -214,15 +263,20 @@
                     <div class="popup-container">
                         <div class="popup" id="popup_success">
                             <img src="images/valid.png" alt="">
-                            <h2>Thank You <i class="fa-solid fa-heart" style="color: #ffc9c2;"></i></h2>
-                            <p>Your message has been successfully submitted.</p>
+                            <h2 id="en">Thank You <i class="fa-solid fa-heart" style="color: #ffc9c2;"></i></h2>
+                            <!--h2 id="en">Obrigada <i class="fa-solid fa-heart" style="color: #ffc9c2;"></i></h2-->
+                            <p id="en">Your message has been successfully submitted.</p>
+                            <!--p id="pt">Sua mensagem foi enviada com sucesso.</p-->
                             <button type="button" onclick="closePopup(event, 'success')">OK</button>
                         </div>
                         <div class="popup" id="popup_failed">
                             <img src="images/invalid.png" alt="">
-                            <h2>Error <i class="fa-solid fa-heart-crack" style="color: #ffc9c2;"></i></i>
+                            <h2 id="en">Error <i class="fa-solid fa-heart-crack" style="color: #ffc9c2;"></i>
                             </h2>
-                            <p>Your message couldn't be sent. Please try again.</p>
+                            <!--h2 id="pt">Erro <i class="fa-solid fa-heart-crack" style="color: #ffc9c2;"></i>
+                            </h2-->
+                            <p id="en">Your message couldn't be sent. Please try again.</p>
+                            <!--p id="pt">Não foi possível enviar sua mensagem. Tente novamente.</p-->
                             <button type="button" onclick="closePopup(event, 'failed')">OK</button>
                         </div>
                     </div>
@@ -297,6 +351,55 @@
                     //## Also add disabling input fields? ##//
                     btnText.textContent = "";
                 })
+            </script>
+
+            <script>
+                let dataReload = document.querySelectorAll("[data-reload]");
+                console.log();
+                //language translations
+                let language = {
+                    eng: {
+                        navigation1: "Home",
+                        navigation2: "About",
+                        navigation3: "Portfolio",
+                        navigation4: "Contact",
+                        navigationsmall1: "Home",
+                        navigationsmall2: "About",
+                        navigationsmall3: "Portfolio",
+                        navigationsmall4: "Contact"
+                    },
+                    pt: {
+                        navigation1: "Página Inicial",
+                        navigation2: "Sobre",
+                        navigation3: "Projetos",
+                        navigation4: "Contato",
+                        navigationsmall1: "Página Inicial",
+                        navigationsmall2: "Sobre",
+                        navigationsmall3: "Projetos",
+                        navigationsmall4: "Contato",
+                    }
+                };
+
+                //define language via window hash
+                if (window.location.hash) {
+                    if (window.location.hash === "#pt") {
+                        nav1.textContent = language.pt.navigation1;
+                        nav2.textContent = language.pt.navigation2;
+                        nav3.textContent = language.pt.navigation3;
+                        nav4.textContent = language.pt.navigation4;
+                        navs1.textContent = language.pt.navigationsmall1;
+                        navs2.textContent = language.pt.navigationsmall2;
+                        navs3.textContent = language.pt.navigationsmall3;
+                        navs4.textContent = language.pt.navigationsmall4;
+                    }
+                }
+
+                for (i = 0; i <= dataReload.length; i++) {
+                    console.log()
+                    dataReload[i].addEventListener("click", function(event) {
+                        location.reload(true);
+                    });
+                }
             </script>
 </body>
 
