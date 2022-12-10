@@ -81,19 +81,19 @@ const portugueseShow = document.querySelectorAll('.pt');
 // }
 
 engBtn.addEventListener('click', event => {
-   englishShow.forEach( el => {
-      el.style.display = 'block';
-   });
-   portugueseShow.forEach( el => {
-      el.style.display = 'none';
-   });
+    englishShow.forEach(el => {
+        el.style.display = 'block';
+    });
+    portugueseShow.forEach(el => {
+        el.style.display = 'none';
+    });
 });
 
 ptBtn.addEventListener('click', event => {
-   englishShow.forEach( el => {
-      el.style.display = 'none';
-   });
-   portugueseShow.forEach( el => {
-      el.style.display = 'block';
-   });
+    englishShow.forEach(el => {
+        el.style.display = 'none';
+    });
+    portugueseShow.forEach(el => {
+        el.style.display = 'block';
+    });
 });
