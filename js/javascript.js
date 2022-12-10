@@ -73,21 +73,6 @@ const ptBtn = document.getElementById('portuguese');
 const englishShow = document.querySelectorAll('.en');
 const portugueseShow = document.querySelectorAll('.pt');
 
-// for (let i = 0; i < engBtn.length; i++) {
-//     englishShow[i].addEventListener("click", () => {
-//         console.log()
-//         portugueseShow.style.display = 'none';
-//         console.log()
-//     })
-// }
-// for (let i = 0; i < ptBtn.length; i++) {
-//     portugueseShow[i].addEventListener("click", () => {
-//         console.log()
-//         englishShow.style.display = 'none';
-//         console.log()
-//     })
-// }
-
 engBtn.addEventListener('click', event => {
     englishShow.forEach(el => {
         el.style.display = 'block';

@@ -97,21 +97,29 @@
         /*top: 100%;*/
     }
     
-    .lang-switch a {
+    .lang-switch button {
         color: #435058;
     }
     
-    .lang-switch a:hover {
+    .lang-switch button:hover {
         text-decoration: underline;
         text-underline-position: under;
     }
     
     #english {
-        margin-right: 4px;
+        margin-right: 3px;
+        outline: none;
+        background: transparent;
+        border: 1px solid transparent;
+        cursor: pointer;
     }
     
     #portuguese {
-        margin-left: 4px;
+        margin-left: 3px;
+        outline: none;
+        background: transparent;
+        border: 1px solid transparent;
+        cursor: pointer;
     }
     
     .en {
