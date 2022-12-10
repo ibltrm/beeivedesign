@@ -1,6 +1,5 @@
-/*import Glide from '../node_modules/@glidejs/glide/dist/glide.js'
 
-console.log({ Glide })*/
+let LANGUAGE = "en";
 
 //header smaller screen
 const navMenu = document.getElementById('nav-menu');
@@ -46,7 +45,17 @@ window.addEventListener("scroll", function(event) {
                 a.classList.remove("active");
             });
 
-            document.querySelector("[href*=" + id + "]").classList.add("active");
+            // document.querySelector("[href*=" + id + "]").classList.add("active");
+            // const navLinks = document.querySelectorAll('.nav-links');
+            // navLinks.forEach( navLink => {
+            //    const nav = navLink.querySelector(`.${LANGUAGE} .nav-link` );
+            //    console.log(nav);
+            // });
+
+            const navEls = document.querySelectorAll(`.nav-links .nav-link[href*=${id}]`);
+            navEls.forEach( navEl => {
+               navEl.classList.add('active');
+            });
         }
     });
 });
@@ -87,6 +96,8 @@ engBtn.addEventListener('click', event => {
    portugueseShow.forEach( el => {
       el.style.display = 'none';
    });
+
+   LANGUAGE = "en";
 });
 
 ptBtn.addEventListener('click', event => {
@@ -96,4 +107,6 @@ ptBtn.addEventListener('click', event => {
    portugueseShow.forEach( el => {
       el.style.display = 'block';
    });
+
+   LANGUAGE = "pt";
 });
