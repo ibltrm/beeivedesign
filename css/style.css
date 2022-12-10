@@ -71,6 +71,57 @@
         overflow-x: hidden;
     }
     
+    .lang-switch {
+        display: flex;
+        width: 100%;
+        text-align: end;
+        justify-content: end;
+        padding: 0 20px;
+        color: #435058;
+        z-index: -1000;
+    }
+    
+    .lang-border {
+        display: flex;
+        background-color: #efa9a0;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #e88f84;
+        /*box-shadow: 0 1px 6px rgba(0, 0, 0, 0.115);*/
+        position: absolute;
+        /* z-index: 1000;*/
+        /*top: 100%;*/
+    }
+    
+    .lang-switch a {
+        color: #435058;
+    }
+    
+    .lang-switch a:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    
+    #english {
+        margin-right: 4px;
+    }
+    
+    #portuguese {
+        margin-left: 4px;
+    }
+    
+    .en {
+        display: block;
+    }
+    
+    .pt {
+        display: none;
+    }
+    
     ul {
         list-style: none;
     }
@@ -255,7 +306,7 @@
     }
     
     #home {
-        padding: 8% 0 0;
+        padding: 6% 0 0;
     }
     
     #home h1 {
@@ -484,6 +535,10 @@
         background: #ffaa9f;
     }
     /*CONTACT*/
+    
+    section #contact {
+        padding: 2rem 0 0;
+    }
     
     .contact-left {
         flex-basis: 35%;
@@ -735,6 +790,12 @@
         }
     }
     
+    @media screen and (min-width:800px) {
+        .header {
+            display: none;
+        }
+    }
+    
     @media screen and (min-width:800px) and (max-width: 1250px) {
         #home h1 {
             font-size: 52px;
@@ -743,7 +804,7 @@
             font-size: 32px;
         }
         #home {
-            padding-top: 15%;
+            padding-top: 8%;
         }
     }
     
@@ -905,7 +966,7 @@
     
     @media only screen and (max-width: 1000px) and (min-width:800px) {
         #home {
-            padding-top: 8%;
+            padding-top: 9%;
         }
     }
     
@@ -948,5 +1009,27 @@
             width: 25x;
             height: 35px;
             top: 6px;
+        }
+    }
+    
+    @media screen and (max-width: 800px) and (orientation: portrait) {
+        .lang-border {
+            margin-top: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 1435px) and (orientation: landscape) {
+        .lang-border {
+            margin-top: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .lang-switch {
+            font-size: 12px;
+        }
+        .lang-border {
+            width: 50px;
+            height: 50px;
         }
     }
