@@ -260,7 +260,11 @@ a:hover {
 }
 
 #logout_btn {
-   display: none;
+    display: none;
+}
+
+#sign_in_btn {
+    margin: 6px auto 0;
 }
 
 @media only screen and (max-width: 800px) {
