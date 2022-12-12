@@ -98,7 +98,6 @@ export default async function getMessage() {
       `;
       template.innerHTML = msgBoxTemp.trim();
       const msgBoxTemplate = template.content.firstChild;
-      console.log({msgBoxTemplate});
 
       const msgBox = msgBoxTemplate.cloneNode(true);
 
