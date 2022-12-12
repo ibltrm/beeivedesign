@@ -78,7 +78,28 @@ export default async function getMessage() {
    if (!msgContainer) return; // Just in case.
 
    msgs.forEach(msg => {
-      const msgBoxTemplate = document.getElementById('msg_box');
+      // const msgBoxTemplate = document.getElementById('msg_box');
+      const template = document.createElement('template');
+      const msgBoxTemp = `
+         <div id="msg_box" class="msg left-msg">
+            <img src="images/1message-icon.png" class="image">
+            <div class="msg-square">
+               <div class="msg-info">
+                  <div id="msg_sender" class="msg-name">JJUJJU</div>
+                  <div id="msg_createdAt" class="msg-date-time"> 10/25/2022 05:17</div>
+               </div>
+               <div id="msg_email" class="msg-email">abcdefg@gmail.com</div>
+               <div id="msg_message" class="msg-text">
+                  My girlfriend is so pretty I love her so much. She is so smart, cute, nice and makes me so happy
+                  only by existing. I am going to let her use my credit card forever as a way to show her my love.
+               </div>
+            </div>
+         </div>
+      `;
+      template.innerHTML = msgBoxTemp.trim();
+      const msgBoxTemplate = template.content.firstChild;
+      console.log({msgBoxTemplate});
+
       const msgBox = msgBoxTemplate.cloneNode(true);
 
       const propsArray = Object.keys(msg);

@@ -1,62 +1,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> messages &diams; </title>
-    <link rel="icon" type='image/png' sizes="32x32" href="images/tab-icon.png">
-    <link href="message-style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> messages &diams; </title>
+   <link rel="icon" type='image/png' sizes="32x32" href="images/tab-icon.png">
+   <link href="message-style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="popup-container">
-        <div class="btns">
-            <button id="open_login_popup_btn" type="button" class="icon-btn"><i class="fa-solid fa-user"></i></button>
-            <button id="logout_btn" type="button" class="icon-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-        </div>
-        <div class=" login-container popup" id="login_popup">
-            <div><img src="images/bee-logo2.png" class="beeive-image"></div>
-            <div class="login-btn">
-                <span>Welcome back <i class="fa-regular fa-heart"></i> </span>
+   <div class="popup-container">
+      <div class="btns">
+         <button id="open_login_popup_btn" type="button" class="icon-btn"><i class="fa-solid fa-user"></i></button>
+         <button id="logout_btn" type="button" class="icon-btn"><i
+               class="fa-solid fa-arrow-right-from-bracket"></i></button>
+      </div>
+      <div class=" login-container popup" id="login_popup">
+         <div><img src="images/bee-logo2.png" class="beeive-image"></div>
+         <div class="login-btn">
+            <span>Welcome back <i class="fa-regular fa-heart"></i> </span>
+         </div>
+         <form>
+            <input id="sign_in_username" type="text" class="info-container" placeholder="Username">
+            <input id="sign_in_password" type="password" class="info-container" placeholder="Password">
+            <button id="sign_in_btn" type="button" class="btn">Sign in</button>
+            <br>
+         </form>
+      </div>
+   </div>
+   <div class="message-container">
+      <section class="messenger">
+         <header class="messenger-header">
+            <div class="title">
+               <i class="fa-solid fa-comment-dots"></i> Messages
             </div>
-            <form>
-                <input id="sign_in_username" type="text" class="info-container" placeholder="Username">
-                <input id="sign_in_password" type="password" class="info-container" placeholder="Password">
-                <button id="sign_in_btn" type="button" class="btn">Sign in</button>
-                <br>
-            </form>
-        </div>
-    </div>
-    <div class="message-container">
-        <section class="messenger">
-            <header class="messenger-header">
-                <div class="title">
-                    <i class="fa-solid fa-comment-dots"></i> Messages
-                </div>
-            </header>
+         </header>
 
-            <main id="msg_container" class="chat">
-                <div id="msg_box" class="msg left-msg">
-                    <img src="images/1message-icon.png" class="image">
-                    <div class="msg-square">
-                        <div class="msg-info">
-                            <div id="msg_sender" class="msg-name">JJUJJU</div>
-                            <div id="msg_createdAt" class="msg-date-time"> 10/25/2022 05:17</div>
-                        </div>
-                        <div id="msg_email" class="msg-email">abcdefg@gmail.com</div>
-                        <div id="msg_message" class="msg-text">
-                            My girlfriend is so pretty I love her so much. She is so smart, cute, nice and makes me so happy only by existing. I am going to let her use my credit card forever as a way to show her my love.
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </section>
-    </div>
-    <!-- <script src="message-js.js" type="module"></script> -->
-    <script src="./js/message.js" type="module"></script>
+         <main id="msg_container" class="chat">
+            <!-- <div id="msg_box" class="msg left-msg">
+               <img src="images/1message-icon.png" class="image">
+               <div class="msg-square">
+                  <div class="msg-info">
+                     <div id="msg_sender" class="msg-name">JJUJJU</div>
+                     <div id="msg_createdAt" class="msg-date-time"> 10/25/2022 05:17</div>
+                  </div>
+                  <div id="msg_email" class="msg-email">abcdefg@gmail.com</div>
+                  <div id="msg_message" class="msg-text">
+                     My girlfriend is so pretty I love her so much. She is so smart, cute, nice and makes me so happy
+                     only by existing. I am going to let her use my credit card forever as a way to show her my love.
+                  </div>
+               </div>
+            </div> -->
+         </main>
+      </section>
+   </div>
+   <!-- <script src="message-js.js" type="module"></script> -->
+   <script src="./js/message.js" type="module"></script>
 </body>
 
 </html>
