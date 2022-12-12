@@ -13,6 +13,8 @@ import {
    });
 
    const signInBtn = document.getElementById('sign_in_btn');
+   const logoutBtn = document.getElementById('logout_btn');
+
    signInBtn.addEventListener('click', async () => {
       const username = document.getElementById('sign_in_username').value;
       const password = document.getElementById('sign_in_password').value;
@@ -53,6 +55,11 @@ import {
       } catch (error) {
          console.error(error);
       }
+   });
+
+   logoutBtn.addEventListener('click', async () => {
+      window.localStorage.removeItem(JWT_STORAGE_PROP);
+      window.location.reload();
    });
 
    message.get.default();

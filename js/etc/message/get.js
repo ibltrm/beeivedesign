@@ -9,11 +9,21 @@ const loginPopup = document.getElementById('login_popup');
 export default async function getMessage() {
 
    const token = window?.localStorage.getItem(JWT_STORAGE_PROP);
+
+   const loginBtn = document.getElementById('sign_in_btn');
+   const logoutBtn = document.getElementById('logout_btn');
+
+   //@@ If not logged in @@//
    if (!token) {
       showLoginPopupBtn(true);
       openLoginPopup();
+      loginBtn.style.display = 'block';
+      logoutBtn.style.display = 'none';
       return;
    }
+
+   loginBtn.style.display = 'none';
+   logoutBtn.style.display = 'block';
 
    closeLoginPopup(); // Just to make sure.
 
