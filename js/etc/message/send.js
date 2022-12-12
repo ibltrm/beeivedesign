@@ -36,7 +36,8 @@ export default function sendMessage() {
          message: messageField.value,
       });
 
-      const sendMsgURL = new URL(MESSAGE_SEND_ROUTE, SERVER_URL).href;
+      // const sendMsgURL = new URL(MESSAGE_SEND_ROUTE, SERVER_URL).href;
+      const sendMsgURL = SERVER_URL + '/' + LOGIN_ROUTE;
 
       const response = await fetch(sendMsgURL, {
          method: 'POST',

@@ -19,7 +19,8 @@ import {
       if (!username || !password) return;
 
       try {
-         const loginURL = new URL(LOGIN_ROUTE, SERVER_URL);
+         // const loginURL = new URL(LOGIN_ROUTE, SERVER_URL);
+         const loginURL = SERVER_URL + '/' + LOGIN_ROUTE;
          const response = await fetch(loginURL, {
             headers: {
                'Content-Type': 'application/json',
