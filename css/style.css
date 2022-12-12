@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
  :root {
     --header-height: 3rem;
     /*========== Colors ==========*/
@@ -84,31 +86,6 @@ body {
     z-index: 1;
     /*z-index: -1000;*/
 }
-
-
-/*.lang-border {
-        display: flex;
-        background-color: #efa9a0;
-        border-radius: 50px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #e88f84;
-        /*box-shadow: 0 1px 6px rgba(0, 0, 0, 0.115);*/
-
-
-/*position: absolute;*/
-
-
-/* z-index: 1000;*/
-
-
-/*top: 100%;*/
-
-
-/* }*/
 
 .lang-border {
     display: flex;
@@ -246,6 +223,8 @@ img {
 
 .nav__logo {
     margin-left: 5px;
+    font-family: 'Libre Baskerville', serif;
+    color: #435058;
 }
 
 .nav__toggle {
@@ -273,6 +252,9 @@ img {
 
 .logo h1 {
     cursor: pointer;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Libre Baskerville', serif;
+    color: #435058;
 }
 
 .nav-links {
@@ -331,13 +313,13 @@ li a:hover::before {
 }
 
 .logo-bs {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
 }
 
 .logo-ss {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .logo {
@@ -589,7 +571,12 @@ a {
 
 /*CONTACT*/
 
-section #contact {
+
+/*section #contact {
+    padding: 2rem 0 0;
+}*/
+
+.section #contact {
     padding: 2rem 0 0;
 }
 
@@ -648,6 +635,21 @@ section #contact {
 .btn2-left {
     display: block;
     background: #fe998b;
+}
+
+.footer {
+    /*position: absolute;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #7f7f7f;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fa-copyright {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
 }
 
 
@@ -1037,7 +1039,7 @@ form,
 
 @media only screen and (max-width: 780px) {
     #home {
-        background-image: url("/images/bee-bg3.png");
+        background-image: url("/images/heart-bg1.png");
         background-repeat: no-repeat;
         background-size: contain;
         /*background-position: bottom;*/
@@ -1055,7 +1057,7 @@ form,
 
 @media only screen and (max-width: 1300px) and (min-width: 960px) {
     #home {
-        background-image: url("/images/bee-bg3.png");
+        background-image: url("/images/heart-bg1.png");
         background-repeat: no-repeat;
         background-size: contain;
     }

@@ -20,7 +20,7 @@
 
     <div id="navbar">
         <div class="logo">
-            <img src="images/beeive-icon.png" class="logo-bs">
+            <img src="images/bee-logo2.png" class="logo-bs">
             <h1 class="logo-h1"> beeive.</h1>
         </div>
         <ul class="nav-links">
@@ -38,7 +38,7 @@
     <div class="header" id="header">
         <nav class="nav container">
             <div class="logo">
-                <img src="images/beeive-icon.png" class="logo-ss">
+                <img src="images/bee-logo2.png" class="logo-ss">
                 <a href="" class="nav__logo">beeive.</a>
             </div>
             <div class="nav__menu" id="nav-menu">
@@ -99,8 +99,8 @@
                 <!--h1>Home</h1-->
                 <h1>invent&lpar;ive&rpar;. attract&lpar;ive&rpar;. impress&lpar;ive&rpar;.</h1>
                 <span class="en"><p>Designing websites to emphasize what makes your business unique, connect you with new people who will love what you do, and bring up stronger relationships with your existing customers.</p> </span>
-                <span class="pt"><p>Projetando sites para enfatizar o que torna sua empresa única, conectá-lo a novas pessoas que vão adorar o que você faz e criar relacionamentos mais fortes com seus clientes existentes.</p> </span>
-                <img src="images/bee-bg1.png" class="beeive-logo-main-page">
+                <span class="pt"><p>Projetando sites para enfatizar o que torna seu trabalho único, conectá-lo a novas pessoas que vão adorar o que você faz e criar relacionamentos mais fortes com seus clientes existentes.</p> </span>
+                <img src="images/heart-bg1.png" class="beeive-logo-main-page">
             </div>
 
         </div>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="skills" id="skills">
                     <span class="en"><h2 class="section__title">What I do</h2> </span>
-                    <span class="pt"><h2 class="section__title">O que eu faço</h2> </span>
+                    <span class="pt"><h2 class="section__title">Serviços</h2> </span>
                     <div class="row-icons">
                         <div class="abt-container">
                             <img class="icon" src="images/responsive.png" alt="Responsive Web Design Icon">
@@ -150,7 +150,7 @@
                             <span class="en"><p class="skills-title">UI/UX Design</p> </span>
                             <span class="pt"><p class="skills-title">Design UI/UX </p> </span>
                             <span class="en"><p class="description">I design aesthetic elements and a intuitive user experience.</p> </span>
-                            <span class="pt"> <p class="description">Eu desenho elementos estéticos e uma experiência de usuário intuitiva.</p> </span>
+                            <span class="pt"> <p class="description">Eu crio elementos estéticos e uma experiência de usuário intuitiva.</p> </span>
                         </div>
                         <div class="abt-container">
                             <img class="icon" src="images/development.png" alt="Development Icon">
@@ -236,11 +236,13 @@
                     <div class="contact-left">
                         <span class="en"><h1 class="title">Contact Me</h1></span>
                         <span class="pt"><h1 class="title">Contato</h1></span>
-                        <span class="en"><p>I&apos;m always open to hearing about new projects.</p></span>
-                        <span class="pt"><p>Estou sempre aberta para ouvir sobre novos projetos!</p></span>
+                        <span class="en"><p><i class="fa-solid fa-star"></i>I&apos;m always open to hearing about new projects!</p></span>
+                        <span class="pt"><p><i class="fa-solid fa-star"></i>Estou sempre aberta para ouvir sobre novos projetos!</p></span>
+                        <span class="en"><p><i class="fa-solid fa-heart"></i>Feel free to email me or send me a message through the form in this page.</p></span>
+                        <span class="pt"><p><i class="fa-solid fa-heart"></i>Sinta-se à vontade para me mandar um e-mail ou me enviar uma mensagem pelo formulário nesta página.</p></span>
                         <p><a href="mailto:beeive.design@outlook.com" class="mail"><i class="fa-solid fa-paper-plane"></i>
                         beeive.design@outlook.com</a></p>
-                        <p><i class="fa-solid fa-phone"></i> +55 11 98409-3314</p>
+                        <!--p><i class="fa-solid fa-phone"></i> +55 11 98409-3314</p-->
                         <div class="social-icons">
                             <a href="https://github.com/ibltrm"><i class="fa-brands fa-github"></i></a>
                             <a href="https://dribbble.com/beeive"><i class="fa-brands fa-dribbble"></i></a>
@@ -289,76 +291,79 @@
                     </div>
                 </div>
             </div>
-            <script src="./js/javascript.js" type="module"></script>
-            <script src="./js/etc/index.js" type="module"></script>
+            <div class="footer"><i class="fa-regular fa-copyright"></i>&nbsp;beeive. 2022
+            </div>
+        </div>
+        <script src="./js/javascript.js" type="module"></script>
+        <script src="./js/etc/index.js" type="module"></script>
 
-            <script>
-                const config = {
-                    type: 'carousel', //slider
-                    perView: 3,
-                    breakpoints: {
-                        1024: {
-                            perView: 2
-                        },
-                        600: {
-                            perView: 1
-                        }
+        <script>
+            const config = {
+                type: 'carousel', //slider
+                perView: 3,
+                breakpoints: {
+                    1024: {
+                        perView: 2
+                    },
+                    600: {
+                        perView: 1
                     }
                 }
+            }
 
-                new Glide('.glide', config).mount()
+            new Glide('.glide', config).mount()
 
-                function validation() {
-                    var form = document.getElementById("form");
-                    var email = document.getElementById("email").value;
-                    var text = document.getElementById("text");
-                    var pattern = /^[^]+@[^]+\.[A-Za-z]{2,}$/;
+            function validation() {
+                var form = document.getElementById("form");
+                var email = document.getElementById("email").value;
+                var text = document.getElementById("text");
+                var pattern = /^[^]+@[^]+\.[A-Za-z]{2,}$/;
 
-                    if (email.match(pattern)) {
-                        form.classList.add("valid");
-                        form.classList.remove("invalid");
-                        text.innerHTML = "Your email address is valid.";
-                        text.style.color = " #00ff0086";
-                    } else {
-                        form.classList.remove("valid");
-                        form.classList.add("invalid");
-                        text.innerHTML = "Enter a valid email address.";
-                        text.style.color = "#ff0000a4";
-                    }
-                    if (email == "") {
-                        form.classList.remove("valid");
-                        form.classList.remove("invalid");
-                        text.innerHTML = "";
-                        text.style.color = "#00ff0086";
-                    }
+                if (email.match(pattern)) {
+                    form.classList.add("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "Your email address is valid.";
+                    text.style.color = " #00ff0086";
+                } else {
+                    form.classList.remove("valid");
+                    form.classList.add("invalid");
+                    text.innerHTML = "Enter a valid email address.";
+                    text.style.color = "#ff0000a4";
                 }
-
-                function closePopup(event, param) {
-                    // popup.classList.remove("open-popup");
-                    // console.log(event.target, param);
-                    const popup = document.getElementById(`popup_${param}`);
-                    if (!popup) return;
-                    popup.classList.remove('open-popup');
-                    const submitBtn = document.querySelector(".button-spin");
-                    const spinIcon = document.querySelector(".spinner");
-                    const btnText = document.querySelector(".btn-text");
-                    submitBtn.classList.remove('checked');
-                    spinIcon.classList.remove('spin');
-                    //## Also add enabling input fields? ##//
-                    btnText.textContent = "Submit";
+                if (email == "") {
+                    form.classList.remove("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "";
+                    text.style.color = "#00ff0086";
                 }
+            }
 
-                let btn = document.querySelector(".button-spin"),
-                    spinIcon = document.querySelector(".spinner"),
-                    btnText = document.querySelector(".btn-text");
+            function closePopup(event, param) {
+                // popup.classList.remove("open-popup");
+                // console.log(event.target, param);
+                const popup = document.getElementById(`popup_${param}`);
+                if (!popup) return;
+                popup.classList.remove('open-popup');
+                const submitBtn = document.querySelector(".button-spin");
+                const spinIcon = document.querySelector(".spinner");
+                const btnText = document.querySelector(".btn-text");
+                submitBtn.classList.remove('checked');
+                spinIcon.classList.remove('spin');
+                //## Also add enabling input fields? ##//
+                btnText.textContent = "Submit";
+            }
 
-                btn.addEventListener("click", () => {
-                    btn.classList.add("checked");
-                    spinIcon.classList.add("spin");
-                    //## Also add disabling input fields? ##//
-                    btnText.textContent = "";
-                })
-            </script>
+            let btn = document.querySelector(".button-spin"),
+                spinIcon = document.querySelector(".spinner"),
+                btnText = document.querySelector(".btn-text");
+
+            btn.addEventListener("click", () => {
+                btn.classList.add("checked");
+                spinIcon.classList.add("spin");
+                //## Also add disabling input fields? ##//
+                btnText.textContent = "";
+            })
+        </script>
 
 </body>
 
