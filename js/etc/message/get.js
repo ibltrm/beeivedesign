@@ -18,7 +18,7 @@ export default async function getMessage() {
    closeLoginPopup(); // Just to make sure.
 
    // const getMsgURL = new URL(MESSAGE_GET_ROUTE, SERVER_URL).href;
-   const getMsgURL = SERVER_URL + '/' + LOGIN_ROUTE;
+   const getMsgURL = SERVER_URL + '/' + MESSAGE_GET_ROUTE;
 
    const response = await fetch(getMsgURL, {
       headers: {

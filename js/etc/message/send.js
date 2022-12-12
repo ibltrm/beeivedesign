@@ -37,7 +37,7 @@ export default function sendMessage() {
       });
 
       // const sendMsgURL = new URL(MESSAGE_SEND_ROUTE, SERVER_URL).href;
-      const sendMsgURL = SERVER_URL + '/' + LOGIN_ROUTE;
+      const sendMsgURL = SERVER_URL + '/' + MESSAGE_SEND_ROUTE;
 
       const response = await fetch(sendMsgURL, {
          method: 'POST',
