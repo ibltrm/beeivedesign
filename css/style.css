@@ -871,7 +871,7 @@ form,
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 780px) {
     #home {
         padding-top: 10%;
     }
@@ -1035,9 +1035,9 @@ form,
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 780px) {
     #home {
-        background-image: url("/images/bee-bg2.png");
+        background-image: url("/images/bee-bg3.png");
         background-repeat: no-repeat;
         background-size: contain;
         /*background-position: bottom;*/
@@ -1053,7 +1053,7 @@ form,
     }
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 950px) {
+@media only screen and (max-width: 1300px) and (min-width: 960px) {
     #home {
         background-image: url("/images/bee-bg3.png");
         background-repeat: no-repeat;
