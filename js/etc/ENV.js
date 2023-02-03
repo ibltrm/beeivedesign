@@ -1,4 +1,4 @@
-export const APP_ENV = "production"; // "development" or "production".
+export const APP_ENV = "development"; // "development" or "production".
 
 export const SERVER_URL = (APP_ENV === "production") ? "https://kevsong.com/beeivedesign-server" : "http://localhost:8080";
 // export const SERVER_URL = "https://kevsong.com/beeivedesign-server";
