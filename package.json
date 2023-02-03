@@ -5,5 +5,23 @@
   "devDependencies": {
     "exact": "^0.8.0",
     "prettier": "^2.8.0"
-  }
+  },
+  "name": "frontend",
+  "description": "1) Open terminal in VSCode via **Terminal** -> **New Terminal** from the top menus.\r 2) Make sure that directory path is current project directory.\r 3) Enter command `git switch master`.\r 4) Enter command `git add .`.\r 5) Enter command `git commit -m \"brief message\"`. The `\"brief message\"` can be replaced with any message of your choice (e.g.`\"added update to homepage\"`).\r 6) Enter command `git push origin master`.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibltrm/beeivedesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibltrm/beeivedesign/issues"
+  },
+  "homepage": "https://github.com/ibltrm/beeivedesign#readme"
 }
