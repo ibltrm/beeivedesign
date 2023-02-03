@@ -2,8 +2,8 @@ FROM node:lts-alpine
 
 # RUN apt update && apt upgrade -y
 
-RUN npm install -g \
-   pm2
+# RUN npm install -g \
+#    pm2
 
 WORKDIR /app/beeivedesign/frontend
 
