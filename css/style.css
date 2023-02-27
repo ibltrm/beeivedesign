@@ -3,19 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
  :root {
     --header-height: 3rem;
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 250;
+      --header-height: 3rem;
     /*-----COLORS-----*/
     --title-color: #000;
     --first-color: #feb6ad;
     --text-color-light: rgb(105, 105, 105);
     --first-color-lighter: rgb(253, 229, 233);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
     --scroll-bar-color: #f5f5f5e5;
     --scroll-thumb-color: #e18376;
@@ -31,18 +24,10 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     /*-----MARGIN BOTTOM-----*/
-    --mb-0-25: .25rem;
-    --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
-    --mb-1: 1rem;
     --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
     --mb-3: 3rem;
     /*-----Z-INDEX-----*/
-    --z-tooltip: 10;
     --z-fixed: 100;
-    --z-modal: 1000;
 }
 
 
@@ -860,7 +845,7 @@ form,
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:801px) {
     .header {
         display: none;
     }
@@ -869,11 +854,6 @@ form,
     }
 }
 
-@media screen and (min-width:800px) {
-    .header {
-        display: none;
-    }
-}
 
 @media screen and (min-width:800px) and (max-width: 1250px) {
     #home h1 {
@@ -887,7 +867,7 @@ form,
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 801px) {
     #home {
         padding-top: 10%;
     }
