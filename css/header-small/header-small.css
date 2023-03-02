@@ -1,0 +1,86 @@
+/*Navbar smaller devices */
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.header__ss {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #feb6ad;
+}
+
+.logo__ss {
+  width: 35px;
+  height: 35px;
+}
+.logo__title {
+  margin-left: 5px;
+  font-family: "Libre Baskerville", serif;
+  color: #435058;
+}
+
+.header-menu {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1.5rem 4rem;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 1.5rem 1.5rem 0 0;
+  transition: 0.3s;
+  background-color: #feb6ad;
+}
+.header-menu__list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.header-menu__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.813rem;
+  color: #435058;
+  font-weight: 500;
+}
+.header-menu__icon {
+  font-size: 1.2rem;
+}
+.header-menu--close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.header__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.header__toggle:hover {
+  color: #feb6ad;
+}
+
+.header__toggle,
+.header-menu--open {
+  color: #000;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 801px) {
+  .header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 801px) {
+  .show-menu {
+    bottom: 0;
+  }
+}/*# sourceMappingURL=header-small.css.map */

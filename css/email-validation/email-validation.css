@@ -1,0 +1,38 @@
+#form {
+  position: relative;
+}
+
+#form .inputBox {
+  position: relative;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+#form.invalid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url(/images/invalid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url(/images/valid.png);
+  background-size: cover;
+  z-index: 1000;
+}/*# sourceMappingURL=email-validation.css.map */

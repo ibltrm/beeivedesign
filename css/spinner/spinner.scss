@@ -1,0 +1,31 @@
+/*spinner*/
+
+.button__spin {
+    display: flex;
+    align-items: center;
+    background-color: #ffaa9f;
+    cursor: pointer;
+    & .icon {
+        font-size: 25px;
+        color: #000;
+        display: none;
+    }
+    &.checked .icon {
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.icon.spinner.spin {
+    animation: spin 1.3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

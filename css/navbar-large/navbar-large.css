@@ -1,0 +1,60 @@
+/*navbar large devices*/
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  position: fixed;
+  background-color: #fbc3bc;
+  transition: all 0.5s ease-in-out;
+  height: 5rem;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  /*text-align: center;*/
+  align-items: center;
+  justify-content: center;
+}
+.logo__bs {
+  width: 55px;
+  height: 55px;
+}
+.logo__h1 {
+  margin-left: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  color: #435058;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0 0.7vw;
+}
+.nav-links__link {
+  margin: 0 10px;
+  color: #435058;
+  padding: 5px 15px;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-links__link.is--active, .nav-links__link:hover {
+  background-color: #435058;
+  color: #fff;
+}
+
+/*media query*/
+@media only screen and (max-width: 801px) {
+  #navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar-large.css.map */

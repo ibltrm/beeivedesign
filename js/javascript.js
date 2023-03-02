@@ -1,9 +1,9 @@
 let LANGUAGE = "en";
 
 //header smaller screen
-const navMenu = document.getElementById('nav-menu');
-const navToggle = document.getElementById('nav-toggle');
-const navClose = document.getElementById('nav-close');
+const navMenu = document.getElementById('header-menu');
+const navToggle = document.getElementById('header-toggle');
+const navClose = document.getElementById('header-close');
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -19,10 +19,10 @@ if (navClose) {
 
 
 /*REMOVE MENU MOBILE*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.header-menu__link')
 
 function linkAction() {
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('header-menu')
         // When nav__link in clicked, remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
@@ -40,20 +40,13 @@ window.addEventListener("scroll", function(event) {
         let id = section.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
-            document.querySelectorAll(".active").forEach((a) => {
-                a.classList.remove("active");
+            document.querySelectorAll(".is--active").forEach((a) => {
+                a.classList.remove("is--active");
             });
 
-            // document.querySelector("[href*=" + id + "]").classList.add("active");
-            // const navLinks = document.querySelectorAll('.nav-links');
-            // navLinks.forEach( navLink => {
-            //    const nav = navLink.querySelector(`.${LANGUAGE} .nav-link` );
-            //    console.log(nav);
-            // });
-
-            const navEls = document.querySelectorAll(`.nav-links .nav-link[href*=${id}]`);
+            const navEls = document.querySelectorAll(`.nav-links .nav-links__link[href*=${id}]`);
             navEls.forEach(navEl => {
-                navEl.classList.add('active');
+                navEl.classList.add('is--active');
             });
         }
     });

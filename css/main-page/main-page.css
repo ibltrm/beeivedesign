@@ -1,0 +1,120 @@
+@import url(/css/style.css);
+/*home section*/
+#home {
+  padding: 6% 0 0;
+}
+#home h1 {
+  font-size: 70px;
+  margin: 0 0 30px 0;
+  color: #e18376;
+}
+#home p {
+  font-size: 43px;
+  color: rgba(0, 0, 0, 0.701);
+}
+
+@media only screen and (max-width: 540px) {
+  #home h1 {
+    font-size: 40px;
+  }
+  #home p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 660px) {
+  #home h1 {
+    font-size: 45px;
+  }
+  #home p {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 800px) {
+  #home h1 {
+    font-size: 50px;
+  }
+  #home p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #home {
+    background-image: url("/images/heart-bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-position: bottom;*/
+  }
+  .beeive-logo-main-page {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+  #home {
+    padding-top: 8%;
+  }
+  #home h1 {
+    font-size: 52px;
+  }
+  #home p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 801px) {
+  #home {
+    padding-top: 10%;
+  }
+  #home p {
+    text-align: initial;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  #home {
+    padding-top: 9%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1300px) {
+  #home {
+    background-position: bottom;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1300px) {
+  #home {
+    background-image: url("/images/heart-bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .beeive-logo-main-page {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1148px) {
+  #home h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 1148px) and (max-width: 1314px) {
+  #home h1 {
+    font-size: 52px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  #home h1 {
+    font-size: 53px;
+  }
+  #home p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+  #home h1 {
+    font-size: 57px;
+  }
+  #home p {
+    font-size: 38;
+  }
+}
+@media only screen and (min-width: 1315px) and (max-width: 1523px) {
+  #home h1 {
+    font-size: 60px;
+  }
+}/*# sourceMappingURL=main-page.css.map */

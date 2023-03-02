@@ -1,0 +1,99 @@
+/*contact section*/
+.section #contact {
+  padding: 2rem 0 0;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #ffaa9f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.contact-left .contact-left__mail {
+  text-decoration: none;
+  color: #000;
+}
+.contact-left .contact-left__mail:hover {
+  color: #ff9081;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #ffaa9f;
+  transform: translateY(-5px);
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-right form {
+  width: 100%;
+}
+.contact-right form input,
+.contact-right form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #fbc3bc;
+  padding: 15px;
+  margin: 15px 0;
+  color: #000;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.contact-right__btn {
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #ffaa9f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.contact-right__btn__btn:hover {
+  background: #ffaa9f;
+}
+.contact-right__btn, .contact-right__btn2 {
+  display: flex;
+  background: #fe998b;
+}
+.contact-right form, .contact-right__btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  form {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 801px) {
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+}/*# sourceMappingURL=contact.css.map */

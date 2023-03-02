@@ -1,0 +1,90 @@
+@import url('/css/style.css');
+
+/*language switch*/
+
+$nav-link-color:#435058;
+$small-font-size: .813rem;
+.lang-switch {
+    display: flex;
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+    padding: 0 20px;
+    color: $nav-link-color;
+    position: absolute;
+    z-index: 1;
+    &__border {
+        display: flex;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    &__globe {
+        margin: 0 auto;
+        position: absolute;
+        z-index: -1;
+        width: 60px;
+        height: 60px;
+    }
+    & button {
+        color: $nav-link-color;
+        &:hover {
+            color: #818b91;
+        }
+    }
+}
+
+#english,
+#portuguese {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#english {
+    margin-right: 3px;
+}
+
+#portuguese {
+    margin-left: 3px;
+}
+
+.en {
+    display: block;
+}
+
+.pt {
+    display: none;
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    .lang-switch__border {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1435px) and (orientation: landscape) {
+    .lang-switch__border {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lang-switch {
+        font-size: 12px;
+        &__border,
+        &__globe {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    #english,
+    #portuguese {
+        font-size: $small-font-size;
+    }
+}

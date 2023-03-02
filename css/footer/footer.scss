@@ -1,0 +1,15 @@
+/*footer*/
+
+.footer {
+    /*position: absolute;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #7f7f7f;
+    font-family: 'Quicksand', sans-serif;
+    .fa-copyright {
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+    }
+}

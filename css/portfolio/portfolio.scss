@@ -1,0 +1,44 @@
+/*portfolio section*/
+
+$text-color-light: rgb(105, 105, 105);
+$normal-font-size: .938rem;
+@media screen and (min-width: 968px) {
+    $normal-font-size: 1rem;
+}
+
+#portfolio {
+    padding: 0 auto;
+    background-color: #fff;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    &__item {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        /*justify-content: center;*/
+        margin: 1rem 0;
+        & img {
+            width: 60%;
+        }
+    }
+    .work-list__description {
+        margin-top: 1rem;
+        & p {
+            color: $text-color-light;
+            font-size: $normal-font-size;
+        }
+        & h3,
+        a {
+            color: #fe998b;
+        }
+    }
+}

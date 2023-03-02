@@ -17,78 +17,78 @@
 </head>
 
 <body>
-
+    <!--navbar for large devices-->
     <div id="navbar">
         <div class="logo">
-            <img src="images/bee-logo2.png" class="logo-bs">
-            <h1 class="logo-h1"> beeive.</h1>
+            <img src="images/bee-logo2.png" class="logo__bs">
+            <h1 class="logo__h1"> beeive.</h1>
         </div>
         <ul class="nav-links">
-            <span class="en"> <li><a href="#home" class="active nav-link ">Home</a></li> </span>
-            <span class="pt">  <li><a href="#home" class="active nav-link">Página Inicial</a></li> </span>
-            <span class="en">  <li><a href="#about" class="nav-link">About</a></li> </span>
-            <span class="pt">  <li><a href="#about" class="nav-link" >Sobre</a></li> </span>
-            <span class="en">   <li><a href="#portfolio" class="nav-link">Portfolio</a></li> </span>
-            <span class="pt">  <li><a href="#portfolio" class="nav-link">Projetos</a></li></span>
-            <span class="en">   <li><a href="#contact" class="nav-link">Contact</a></li></span>
-            <span class="pt">  <li><a href="#contact" class="nav-link">Contato</a></li></span>
+            <span class="en"> <li><a href="#home" class="is--active nav-links__link">Home</a></li> </span>
+            <span class="pt">  <li><a href="#home" class="is--active nav-links__link">Página Inicial</a></li> </span>
+            <span class="en">  <li><a href="#about" class="nav-links__link">About</a></li> </span>
+            <span class="pt">  <li><a href="#about" class="nav-links__link">Sobre</a></li> </span>
+            <span class="en">   <li><a href="#portfolio" class="nav-links__link">Portfolio</a></li> </span>
+            <span class="pt">  <li><a href="#portfolio" class="nav-links__link">Projetos</a></li></span>
+            <span class="en">   <li><a href="#contact" class="nav-links__link">Contact</a></li></span>
+            <span class="pt">  <li><a href="#contact" class="nav-links__link">Contato</a></li></span>
         </ul>
     </div>
-
+    <!--navbar for smaller devices-->
     <div class="header" id="header">
-        <nav class="nav container">
+        <nav class="header__ss container">
             <div class="logo">
-                <img src="images/bee-logo2.png" class="logo-ss">
-                <a href="" class="nav__logo">beeive.</a>
+                <img src="images/bee-logo2.png" class="logo__ss">
+                <a href="" class="logo__title">beeive.</a>
             </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <span class="en"> <a href="#home" class="nav__link">
-                            <i class="fa-solid fa-house nav__icon"></i> Home
+            <div class="header-menu" id="header-menu">
+                <ul class="header-menu__list grid">
+                    <li>
+                        <span class="en"> <a href="#home" class="header-menu__link">
+                            <i class="fa-solid fa-house header-menu__icon"></i> Home
                         </a> </span>
-                        <span class="pt"><a href="#home" class="nav__link">
-                            <i class="fa-solid fa-house nav__icon"></i> Página Inicial
+                        <span class="pt"><a href="#home" class="header-menu__link">
+                            <i class="fa-solid fa-house header-menu__icon"></i> Página Inicial
                         </a></span>
                     </li>
-                    <li class="nav__item">
-                        <span class="en"><a href="#about" class="nav__link">
-                            <i class="fa-solid fa-user nav__icon"></i> About
+                    <li>
+                        <span class="en"><a href="#about" class="header-menu__link">
+                            <i class="fa-solid fa-user header-menu__icon"></i> About
                         </a> </span>
-                        <span class="pt"><a href="#about" class="nav__link">
-                            <i class="fa-solid fa-user nav__icon"></i> Sobre 
-                        </a> </span>
-                    </li>
-                    <li class="nav__item">
-                        <span class="en"><a href="#portfolio" class="nav__link">
-                            <i class="fa-solid fa-image nav__icon"></i> Portfolio
-                        </a> </span>
-                        <span class="pt"> <a href="#portfolio" class="nav__link">
-                            <i class="fa-solid fa-image nav__icon"></i> Projetos
+                        <span class="pt"><a href="#about" class="header-menu__link">
+                            <i class="fa-solid fa-user header-menu__icon"></i> Sobre 
                         </a> </span>
                     </li>
-                    <li class="nav__item">
-                        <span class="en"><a href="#contact" class="nav__link">
-                            <i class="fa-solid fa-paper-plane nav__icon"></i> Contact
+                    <li>
+                        <span class="en"><a href="#portfolio" class="header-menu__link">
+                            <i class="fa-solid fa-image header-menu__icon"></i> Portfolio
                         </a> </span>
-                        <span class="pt"><a href="#contact" class="nav__link">
-                            <i class="fa-solid fa-paper-plane nav__icon"></i> Contato
+                        <span class="pt"> <a href="#portfolio" class="header-menu__link">
+                            <i class="fa-solid fa-image header-menu__icon"></i> Projetos
+                        </a> </span>
+                    </li>
+                    <li>
+                        <span class="en"><a href="#contact" class="header-menu__link">
+                            <i class="fa-solid fa-paper-plane header-menu__icon"></i> Contact
+                        </a> </span>
+                        <span class="pt"><a href="#contact" class="header-menu__link">
+                            <i class="fa-solid fa-paper-plane header-menu__icon"></i> Contato
                         </a> </span>
                     </li>
                 </ul>
-                <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+                <i class="fa-solid fa-xmark header-menu--close" id="header-close"></i>
             </div>
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-angle-down nav__open"></i>
+            <div>
+                <div class="header__toggle" id="header-toggle">
+                    <i class="fa-solid fa-angle-down header-menu--open"></i>
                 </div>
             </div>
         </nav>
     </div>
     <div id="home" class="section">
         <div class="lang-switch">
-            <div class="lang-border">
-                <img src="images/globe.png" class="lang-globe">
+            <div class="lang-switch__border">
+                <img src="images/globe.png" class="lang-switch__globe">
                 <button id="english">EN</button> &verbar;
                 <button id="portuguese">PT</button>
             </div>
@@ -113,10 +113,10 @@
                     <img src="images/profile-img.png">
                 </div>
                 <div class="about-1st-col">
-                    <span class="en"><h1 class="title justify"> Hello&excl; <img src="images/3d-heart.png" class="heart"></h1></span>
-                    <span class="pt"><h1 class="title justify"> Oi&excl; <img src="images/3d-heart.png" class="heart"></h1> </span>
-                    <span class="en"><h2 class="subtitle"> I&apos;m Isabella, a freelancer web designer and developer based in São Paulo, Brazil, creating unique, creative digital experiences.</h2> </span>
-                    <span class="pt"><h2 class="subtitle"> Eu sou a Isabella, web designer e desenvolvedora freelancer baseada em São Paulo, Brasil.</h2></span>
+                    <span class="en"><h1 class="about-1st-col__title about-1st-col__justify"> Hello&excl; <img src="images/3d-heart.png" class="about-1st-col__heart"></h1></span>
+                    <span class="pt"><h1 class="about-1st-col__title about-1st-col__justify"> Oi&excl; <img src="images/3d-heart.png" class="about-1st-col__heart"></h1> </span>
+                    <span class="en"><h2 class="about-1st-col__subtitle"> I&apos;m Isabella, a freelancer web designer and developer based in São Paulo, Brazil, creating unique, creative digital experiences.</h2> </span>
+                    <span class="pt"><h2 class="about-1st-col__subtitle"> Eu sou a Isabella, web designer e desenvolvedora freelancer e moro em São Paulo, Brasil.</h2></span>
                     <!--p>Hi! My name is Isabella Beltrame and I'm a Brazil-based freelance web designer and developer.</p-->
                     <span class="en"><p>My work is focused on helping people, brands and small businesses express unique ideas into life with design and technology.
                     </p> </span>
@@ -139,29 +139,29 @@
 
                 </div>
                 <div class="skills" id="skills">
-                    <span class="en"><h2 class="section__title">What I do</h2> </span>
-                    <span class="pt"><h2 class="section__title">Serviços</h2> </span>
-                    <div class="row-icons">
-                        <div class="abt-container">
-                            <img class="icon" src="images/responsive.png" alt="Responsive Web Design Icon">
-                            <span class="en"><p class="skills-title">Responsive Web Design</p></span>
-                            <span class="pt"><p class="skills-title">Web Design Responsivo</p></span>
-                            <span class="en"><p class="description">I create website pages that adapts to all devices and screen sizes.</p> </span>
-                            <span class="pt"><p class="description">Eu desenvolvo páginas de sites que se adaptam a todos os dispositivos e tamanhos de tela.</p> </span>
+                    <span class="en"><h2 class="skills__main-title">What I do</h2> </span>
+                    <span class="pt"><h2 class="skills__main-title">Serviços</h2> </span>
+                    <div class="skills-content">
+                        <div class="skills-content__container">
+                            <img class="skills-content__icon" src="images/responsive.png" alt="Responsive Web Design Icon">
+                            <span class="en"><p class="skills-content__title">Responsive Web Design</p></span>
+                            <span class="pt"><p class="skills-content__title">Web Design Responsivo</p></span>
+                            <span class="en"><p>I create website pages that adapts to all devices and screen sizes.</p> </span>
+                            <span class="pt"><p>Eu desenvolvo páginas de sites que se adaptam a todos os dispositivos e tamanhos de tela.</p> </span>
                         </div>
-                        <div class="abt-container">
-                            <img class="icon" src="images/ui-ux-design.png">
-                            <span class="en"><p class="skills-title">UI/UX Design</p> </span>
-                            <span class="pt"><p class="skills-title">Design UI/UX </p> </span>
-                            <span class="en"><p class="description">I design aesthetic elements and a intuitive user experience.</p> </span>
-                            <span class="pt"> <p class="description">Eu crio elementos estéticos e uma experiência de usuário intuitiva.</p> </span>
+                        <div class="skills-content__container">
+                            <img class="skills-content__icon" src="images/ui-ux-design.png">
+                            <span class="en"><p class="skills-content__title">UI/UX Design</p> </span>
+                            <span class="pt"><p class="skills-content__title">Design UI/UX </p> </span>
+                            <span class="en"><p>I design aesthetic elements and a intuitive user experience.</p> </span>
+                            <span class="pt"> <p>Eu crio elementos estéticos e uma experiência de usuário intuitiva.</p> </span>
                         </div>
-                        <div class="abt-container">
-                            <img class="icon" src="images/development.png" alt="Development Icon">
-                            <span class="en"><p class="skills-title">Development</p> </span>
-                            <span class="pt"><p class="skills-title">Desenvolvimento</p> </span>
-                            <span class="en"><p class="description"> I write the code that makes your website work and keep the maintenance.</p></span>
-                            <span class="pt"><p class="description"> Eu escrevo o código que faz seu site funcionar e faço a manutenção.
+                        <div class="skills-content__container">
+                            <img class="skills-content__icon" src="images/development.png" alt="Development Icon">
+                            <span class="en"><p class="skills-content__title">Development</p> </span>
+                            <span class="pt"><p class="skills-content__title">Desenvolvimento</p> </span>
+                            <span class="en"><p> I write the code that makes your website work and keep the maintenance.</p></span>
+                            <span class="pt"><p> Eu escrevo o código que faz seu site funcionar e faço a manutenção.
                             </p> </span>
                         </div>
                     </div>
@@ -178,11 +178,11 @@
                     <div class="glide">
                         <div class="glide__track" data-glide-el="track">
                             <div class="glide__slides">
-                                <div class="glide__slide work">
-                                    <div class="port-grid">
+                                <div class="glide__slide work-list__item">
+                                    <div class="work-list__grid">
                                         <a href="thrift-store/store-index.html"> <img src="images/e-commerce-store.png" alt="">
                                         </a>
-                                        <div class="port-description">
+                                        <div class="work-list__description">
                                             <span class="en"><h3>eCommerce Website</h3></span>
                                             <span class="pt"><h3>eCommerce Website</h3></span>
                                             <span class="en"><p>A resposive online thrift store design in PT-BR that includes main, products, cart, contact and login page.
@@ -195,23 +195,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="glide__slide work">
-                                    <div class="port-grid">
+                                <div class="glide__slide work-list__item">
+                                    <div class="work-list__grid">
                                         <a href="JS Calculator/calculator-index.html"><img src="images/calculator-mode-switch.png" alt=""></a>
-                                        <div class="port-description">
+                                        <div class="work-list__description">
                                             <span class="en"><h3>Calculator</h3></span>
                                             <span class="pt"><h3>Calculadora</h3></span>
-                                            <span class="en"><p>Inspired in Iphone calculator, has dark&sol;light mode, a responsive design and complete functionality. As my very first JavaScript project, my fiancé helped me out.</p></span>
-                                            <span class="pt"><p>Inspirado na calculadora do Iphone, possui modo claro&sol;escuro, design responsivo e funcionalidade completa. Sendo meu primeiro projeto focado em JavaScript, meu noivo me deu uma mãozinha.</p></span>
+                                            <span class="en"><p>Inspired in Iphone calculator, has dark&sol;light mode, a responsive design and complete functionality.</p></span>
+                                            <span class="pt"><p>Inspirado na calculadora do Iphone, possui modo claro&sol;escuro, design responsivo e funcionalidade completa.</p></span>
                                             <a href="JS Calculator/calculator-index.html"><i
                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="glide__slide work">
-                                    <div class="port-grid">
+                                <div class="glide__slide work-list__item">
+                                    <div class="work-list__grid">
                                         <img src="images/timer-in-progress.png" alt="">
-                                        <div class="port-description">
+                                        <div class="work-list__description">
                                             <span class="en"><h3>Pomodoro Timer</h3></span>
                                             <span class="pt"><h3>Temporizador Pomodoro</h3></span>
                                             <span class="en"><p>Easy to use pomodoro timer to improve your working and studying efficiency, with a simple clear design.</p></span>
@@ -220,10 +220,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="glide__slide work">
-                                    <div class="port-grid">
+                                <div class="glide__slide work-list__item">
+                                    <div class="work-list__grid">
                                         <a href="projeto-nobre/index.html"><img src="images/projeto-nobre.png" alt=""></a>
-                                        <div class="port-description">
+                                        <div class="work-list__description">
                                             <span class="en"><h3>Projeto Nobre</h3></span>
                                             <span class="pt"><h3>Projeto Nobre</h3></span>
                                             <span class="en"><p>Responsive handmade and custom-built furniture website. In progress. </p></span>
@@ -247,7 +247,7 @@
         <!--CONTACT-->
 
         <div id="contact" class="section">
-            <div class="contact-container">
+            <div>
 
                 <div class="row">
                     <div class="contact-left">
@@ -257,15 +257,14 @@
                         <span class="pt"><p><i class="fa-solid fa-star"></i>Estou sempre aberta para ouvir sobre novos projetos!</p></span>
                         <span class="en"><p><i class="fa-solid fa-heart"></i>Feel free to email me or send me a message through the form in this page.</p></span>
                         <span class="pt"><p><i class="fa-solid fa-heart"></i>Sinta-se à vontade para me mandar um email ou me enviar uma mensagem pelo formulário nesta página.</p></span>
-                        <p><a href="mailto:beeive.design@outlook.com" class="mail"><i class="fa-solid fa-paper-plane"></i>
+                        <p><a href="mailto:beeive.design@outlook.com" class="contact-left__mail"><i class="fa-solid fa-paper-plane"></i>
                         beeive.design@outlook.com</a></p>
-                        <!--p><i class="fa-solid fa-phone"></i> +55 11 98409-3314</p-->
                         <div class="social-icons">
                             <a href="https://github.com/ibltrm"><i class="fa-brands fa-github"></i></a>
                             <a href="https://dribbble.com/beeive"><i class="fa-brands fa-dribbble"></i></a>
                             <a href="https://www.instagram.com/ibltrm/"><i class="fa-brands fa-instagram"></i></a>
                         </div>
-                        <!--a href="" download class="btn-left btn2-left">Download CV</a-->
+
                     </div>
                     <div class="contact-right">
                         <form id="form" onsubmit="return false">
@@ -278,16 +277,15 @@
                             </div>
                             <span class="en"><textarea id="message_message" name="Message" rows="6" placeholder="Your Message"></textarea></span>
                             <span class="pt"><textarea id="message_message" name="Message" rows="6" placeholder="Deixe aqui sua mensagem"></textarea></span>
-                            <button id="message_submit_button" class="btn btn2 button-spin submit-disabled" type="button">
+                            <button id="message_submit_button" class="contact-right__btn contact-right__btn2 button__spin submit-disabled" type="button">
                         <i class="fa-solid fa-circle-notch icon spinner"></i>
-                        <span class="btn-text en">Submit</span>
-                        <span class="btn-text pt">Enviar</span>
+                        <span class="btn-send en">Submit</span>
+                        <span class="btn-send pt">Enviar</span>
                      </button>
-                            <!--button id="message_submit_button" class="btn btn2 submit-disabled" onclick="openPopup()">Submit</button-->
                         </form>
                     </div>
                     <div class="popup-container">
-                        <div class="popup" id="popup_success">
+                        <div class="popup__item" id="popup_success">
                             <img src="images/valid.png" alt="">
                             <span class="en"><h2>Thank You <i class="fa-solid fa-heart" style="color: #ffc9c2;"></i></h2></span>
                             <span class="pt"><h2>Obrigada <i class="fa-solid fa-heart" style="color: #ffc9c2;"></i></h2></span>
@@ -295,7 +293,7 @@
                             <span class="pt"><p>Sua mensagem foi enviada com sucesso.</p></span>
                             <button type="button" onclick="closePopup(event, 'success')">OK</button>
                         </div>
-                        <div class="popup" id="popup_failed">
+                        <div class="popup__item" id="popup_failed">
                             <img src="images/invalid.png" alt="">
                             <span class="en"><h2>Error <i class="fa-solid fa-heart-crack" style="color: #ffc9c2;"></i>
                             </h2></span>
@@ -361,18 +359,18 @@
                 const popup = document.getElementById(`popup_${param}`);
                 if (!popup) return;
                 popup.classList.remove('open-popup');
-                const submitBtn = document.querySelector(".button-spin");
+                const submitBtn = document.querySelector(".button__spin");
                 const spinIcon = document.querySelector(".spinner");
-                const btnText = document.querySelector(".btn-text");
+                const btnText = document.querySelector(".btn-send");
                 submitBtn.classList.remove('checked');
                 spinIcon.classList.remove('spin');
                 //## Also add enabling input fields? ##//
                 btnText.textContent = "Submit";
             }
 
-            let btn = document.querySelector(".button-spin"),
+            let btn = document.querySelector(".button__spin"),
                 spinIcon = document.querySelector(".spinner"),
-                btnText = document.querySelector(".btn-text");
+                btnText = document.querySelector(".btn-send");
 
             btn.addEventListener("click", () => {
                 btn.classList.add("checked");
