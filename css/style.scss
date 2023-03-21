@@ -1,3 +1,5 @@
+    /*import font-family */
+    
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
@@ -14,6 +16,7 @@
     @import url('./popup/popup.css');
     @import url(./spinner/spinner.css);
     @import url('./footer/footer.css');
+    @import url('./_mixins/mixins.css');
     /* Root Element Style */
     
     $header-height: 3rem;
@@ -67,42 +70,36 @@
     
     body {
         overflow-x: hidden;
-    }
-    
-    body::-webkit-scrollbar {
-        width: 6px;
-    }
-    
-    body::-webkit-scrollbar-track {
-        background-color: $scroll-bar-color;
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        background-color: $scroll-thumb-color;
-        border-radius: 30px;
-    }
-    
-    li a {
-        text-decoration: none;
-        margin: 0 0.7vw;
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: $scroll-bar-color;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $scroll-thumb-color;
+            border-radius: 30px;
+        }
     }
     
     li {
         position: relative;
-    }
-    
-    li a::before {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 0%;
-        position: absolute;
-        transition: all ease-in-out 250ms;
-        margin: 0% 0 0 10%;
-    }
-    
-    li a:hover::before {
-        width: 80%;
+        a {
+            text-decoration: none;
+            margin: 0 0.7vw;
+            &::before {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 0%;
+                position: absolute;
+                transition: all ease-in-out 250ms;
+                margin: 0% 0 0 10%;
+            }
+            &:hover::before {
+                width: 80%;
+            }
+        }
     }
     
     ul {
@@ -121,10 +118,9 @@
     .section {
         padding: 2rem 0 4rem;
         min-height: 100vh;
-    }
-    
-    .section:nth-child(even) {
-        background-color: $background-even;
+        &:nth-child(even) {
+            background-color: $background-even;
+        }
     }
     
     .container {

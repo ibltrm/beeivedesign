@@ -1,5 +1,3 @@
-@import url('/css/style.css');
-
 /*language switch*/
 
 $nav-link-color:#435058;
@@ -37,8 +35,7 @@ $small-font-size: .813rem;
     }
 }
 
-#english,
-#portuguese {
+.language {
     outline: none;
     background: transparent;
     border: 1px solid transparent;
@@ -62,9 +59,9 @@ $small-font-size: .813rem;
     display: none;
 }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 1050px) and (orientation: portrait) {
     .lang-switch__border {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 }
 
@@ -83,8 +80,7 @@ $small-font-size: .813rem;
             height: 50px;
         }
     }
-    #english,
-    #portuguese {
+    .language {
         font-size: $small-font-size;
     }
 }

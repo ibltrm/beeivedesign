@@ -44,18 +44,18 @@ $title-color: #000;
     flex-basis: 60%;
     form {
         width: 100%;
-    }
-    form input,
-    form textarea {
-        width: 100%;
-        border: 0;
-        outline: none;
-        background: #fbc3bc;
-        padding: 15px;
-        margin: 15px 0;
-        color: #000;
-        font-size: 18px;
-        border-radius: 6px;
+        & input,
+        & textarea {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #fbc3bc;
+            padding: 15px;
+            margin: 15px 0;
+            color: #000;
+            font-size: 18px;
+            border-radius: 6px;
+        }
     }
     &__btn {
         margin: 50px auto;

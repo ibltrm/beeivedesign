@@ -1,18 +1,9 @@
 #form {
   position: relative;
 }
-
 #form .inputBox {
   position: relative;
 }
-
-#text {
-  display: block;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-
 #form.invalid .inputBox:before {
   content: "";
   position: absolute;
@@ -24,7 +15,6 @@
   background-size: cover;
   z-index: 1000;
 }
-
 #form.valid .inputBox:before {
   content: "";
   position: absolute;
@@ -35,4 +25,11 @@
   background: url(/images/valid.png);
   background-size: cover;
   z-index: 1000;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }/*# sourceMappingURL=email-validation.css.map */

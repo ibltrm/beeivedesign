@@ -1,83 +1,91 @@
-@import url("/css/style.css");
 /*language switch*/
+
 .lang-switch {
-  display: flex;
-  width: 100%;
-  text-align: end;
-  justify-content: end;
-  padding: 0 20px;
-  color: #435058;
-  position: absolute;
-  z-index: 1;
-}
-.lang-switch__border {
-  display: flex;
-  border-radius: 50px;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.lang-switch__globe {
-  margin: 0 auto;
-  position: absolute;
-  z-index: -1;
-  width: 60px;
-  height: 60px;
-}
-.lang-switch button {
-  color: #435058;
-}
-.lang-switch button:hover {
-  color: #818b91;
+    display: flex;
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+    padding: 0 20px;
+    color: #435058;
+    position: absolute;
+    z-index: 1;
 }
 
-#english,
-#portuguese {
-  outline: none;
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-size: 16px;
+.lang-switch__border {
+    display: flex;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-switch__globe {
+    margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+}
+
+.lang-switch button {
+    color: #435058;
+}
+
+.lang-switch button:hover {
+    color: #818b91;
+}
+
+.language {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 #english {
-  margin-right: 3px;
+    margin-right: 3px;
 }
 
 #portuguese {
-  margin-left: 3px;
+    margin-left: 3px;
 }
 
 .en {
-  display: block;
+    display: block;
 }
 
 .pt {
-  display: none;
+    display: none;
 }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
-  .lang-switch__border {
-    margin-top: 20px;
-  }
+@media screen and (max-width: 1050px) and (orientation: portrait) {
+    .lang-switch__border {
+        margin-top: 25px;
+    }
 }
+
 @media screen and (max-width: 1435px) and (orientation: landscape) {
-  .lang-switch__border {
-    margin-top: 20px;
-  }
+    .lang-switch__border {
+        margin-top: 20px;
+    }
 }
+
 @media screen and (max-width: 500px) {
-  .lang-switch {
-    font-size: 12px;
-  }
-  .lang-switch__border, .lang-switch__globe {
-    width: 50px;
-    height: 50px;
-  }
-  #english,
-  #portuguese {
-    font-size: 0.813rem;
-  }
-}/*# sourceMappingURL=lang-switch.css.map */
+    .lang-switch {
+        font-size: 12px;
+    }
+    .lang-switch__border,
+    .lang-switch__globe {
+        width: 50px;
+        height: 50px;
+    }
+    .language {
+        font-size: 0.813rem;
+    }
+}
+
+
+/*# sourceMappingURL=lang-switch.css.map */

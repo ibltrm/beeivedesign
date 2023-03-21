@@ -44,8 +44,7 @@
 .contact-right form {
   width: 100%;
 }
-.contact-right form input,
-.contact-right form textarea {
+.contact-right form input, .contact-right form textarea {
   width: 100%;
   border: 0;
   outline: none;
