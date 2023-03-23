@@ -1,22 +1,16 @@
-/*Navbar smaller devices */
+/*navbar smaller devices */
 
-$header-height: 3rem;
-$title-color: #000;
-$first-color: #feb6ad;
-$nav-link-color:#435058;
-$small-font-size: .813rem;
-$font-medium: 500;
-$z-fixed: 100;
-@media screen and (min-width: 968px) {
-    $small-font-size: .875rem;
-}
-
+@import '../_mixins/mixins.scss';
+@import '../_root/root-styles.scss';
 .header {
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: $z-fixed;
+    @include screen-size(screen-hf-md) {
+        display: none;
+    }
     &__ss {
         max-width: 968px;
         height: $header-height;
@@ -88,14 +82,8 @@ $z-fixed: 100;
     font-weight: $font-medium;
 }
 
-@media screen and (min-width:801px) {
-    .header {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 801px) {
-    .show-menu {
+.show-menu {
+    @include screen-size(screen-breakpoint) {
         bottom: 0;
     }
 }

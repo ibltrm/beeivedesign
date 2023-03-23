@@ -1,11 +1,6 @@
 /*portfolio section*/
 
-$text-color-light: rgb(105, 105, 105);
-$normal-font-size: .938rem;
-@media screen and (min-width: 968px) {
-    $normal-font-size: 1rem;
-}
-
+@import '../_root/root-styles.scss';
 #portfolio {
     padding: 0 auto;
     background-color: #fff;

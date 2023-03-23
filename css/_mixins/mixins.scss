@@ -1,31 +1,51 @@
-@mixin for-size($size) {
-    @if $size==phone-only {
+@mixin screen-size($size) {
+    @if $size==screen-xs-max {
         @media (max-width: 599px) {
             @content;
         }
     }
-    @else if $size==tablet-portrait-min {
+    @else if $size==screen-xs-hf {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+    @else if $size==screen-sm-hf-md {
         @media (min-width: 600px) and (max-width: 800px) {
             @content;
         }
     }
-    @else if $size==tablet-portrait {
+    @else if $size==screen-sm-max {
+        @media (max-width: 967px) {
+            @content;
+        }
+    }
+    @else if $size==screen-hf-md {
         @media (min-width: 800px) {
             @content;
         }
     }
-    @else if $size==tablet-portrait-up {
+    @else if $size==screen-breakpoint {
+        @media (max-width: 801px) {
+            @content;
+        }
+    }
+    @else if $size==screen-md-hf-max {
         @media (min-width: 800px) and (max-width: 1279px) {
             @content;
         }
     }
-    @else if $size==tablet-landscape-up {
+    @else if $size==screen-md-min-max {
         @media (min-width: 968px) and (max-width: 1279px) {
             @content;
         }
     }
-    @else if $size==big-desktop-up {
-        @media (min-width: 1800px) {
+    @else if $size==screen-lg-hf {
+        @media (max-width: 1435px) {
+            @content;
+        }
+    }
+    @else if $size==screen-xl-min {
+        @media (min-width: 1920px) {
             @content;
         }
     }

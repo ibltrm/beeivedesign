@@ -1,0 +1,26 @@
+/*Root Element Style*/
+
+$header-height: 3rem;
+$title-color: #000;
+$first-color: #feb6ad;
+$second-color: #fbc3bc;
+$text-color-light: rgb(105, 105, 105);
+$nav-link-color: #435058;
+$scroll-bar-color: #f5f5f5e5;
+$scroll-thumb-color: #e18376;
+$background-even: #fbc3bc34;
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$font-medium: 500;
+$z-fixed: 100;
+@media only screen and (min-width: 968px) {
+    $big-font-size: 3rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+}

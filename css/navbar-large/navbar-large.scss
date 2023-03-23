@@ -1,20 +1,22 @@
 /*navbar large devices*/
 
-$second-color: #fbc3bc;
-$nav-link-color:#435058;
+@import '../_mixins/mixins.scss';
+@import '../_root/root-styles.scss';
 #navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
-    ;
     width: 100vw;
     position: fixed;
     background-color: $second-color;
     transition: all 0.5s ease-in-out;
     height: 5rem;
     z-index: 10;
+    @include screen-size(screen-breakpoint) {
+        display: none;
+    }
 }
 
 .logo {
@@ -54,14 +56,5 @@ $nav-link-color:#435058;
     &__link:hover {
         background-color: $nav-link-color;
         color: #fff;
-    }
-}
-
-
-/*media query*/
-
-@media only screen and (max-width: 801px) {
-    #navbar {
-        display: none;
     }
 }

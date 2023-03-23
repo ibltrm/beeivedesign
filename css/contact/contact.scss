@@ -1,6 +1,7 @@
 /*contact section*/
 
-$title-color: #000;
+@import '../_mixins/mixins.scss';
+@import '../_root/root-styles.scss';
 .section #contact {
     padding: 2rem 0 0;
 }
@@ -20,6 +21,11 @@ $title-color: #000;
         color: $title-color;
         &:hover {
             color: #ff9081;
+        }
+    }
+    .title {
+        @include screen-size(screen-xs-max) {
+            font-size: 1.8rem;
         }
     }
 }
@@ -44,6 +50,9 @@ $title-color: #000;
     flex-basis: 60%;
     form {
         width: 100%;
+        @include screen-size(screen-xs-max) {
+            padding: 15px;
+        }
         & input,
         & textarea {
             width: 100%;
@@ -84,21 +93,9 @@ $title-color: #000;
     }
 }
 
-@media screen and (max-width:500px) {
-    .title {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    form {
-        padding: 15px;
-    }
-}
-
-@media only screen and (max-width: 801px) {
-    .contact-left,
-    .contact-right {
+.contact-left,
+.contact-right {
+    @include screen-size(screen-breakpoint) {
         flex-basis: 100%;
     }
 }

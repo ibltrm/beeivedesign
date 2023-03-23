@@ -1,4 +1,4 @@
-/*contact section*/
+/*contact section*/ /*Root Element Style*/
 .section #contact {
   padding: 2rem 0 0;
 }
@@ -20,6 +20,11 @@
 }
 .contact-left .contact-left__mail:hover {
   color: #ff9081;
+}
+@media (max-width: 599px) {
+  .contact-left .title {
+    font-size: 1.8rem;
+  }
 }
 
 .social-icons {
@@ -43,6 +48,11 @@
 }
 .contact-right form {
   width: 100%;
+}
+@media (max-width: 599px) {
+  .contact-right form {
+    padding: 15px;
+  }
 }
 .contact-right form input, .contact-right form textarea {
   width: 100%;
@@ -80,17 +90,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    font-size: 1.8rem;
-  }
-}
-@media only screen and (max-width: 550px) {
-  form {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .contact-left,
   .contact-right {
     flex-basis: 100%;

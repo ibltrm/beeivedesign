@@ -1,16 +1,20 @@
 /*language switch*/
 
-$nav-link-color:#435058;
-$small-font-size: .813rem;
+@import '../_mixins/mixins.scss';
+@import '../_root/root-styles.scss';
 .lang-switch {
     display: flex;
     width: 100%;
-    text-align: end;
-    justify-content: end;
+    /*text-align: end;*/
+    justify-content: flex-end;
     padding: 0 20px;
     color: $nav-link-color;
     position: absolute;
     z-index: 1;
+    margin-top: 30px;
+    @include screen-size(screen-xs-hf) {
+        font-size: 12px;
+    }
     &__border {
         display: flex;
         border-radius: 50px;
@@ -19,6 +23,11 @@ $small-font-size: .813rem;
         text-align: center;
         justify-content: center;
         align-items: center;
+        @include screen-size(screen-xs-hf) {
+            margin-top: 25px;
+            width: 50px;
+            height: 50px;
+        }
     }
     &__globe {
         margin: 0 auto;
@@ -26,6 +35,10 @@ $small-font-size: .813rem;
         z-index: -1;
         width: 60px;
         height: 60px;
+        @include screen-size(screen-xs-hf) {
+            width: 50px;
+            height: 50px;
+        }
     }
     & button {
         color: $nav-link-color;
@@ -41,6 +54,9 @@ $small-font-size: .813rem;
     border: 1px solid transparent;
     cursor: pointer;
     font-size: 16px;
+    @include screen-size(screen-xs-hf) {
+        font-size: $small-font-size;
+    }
 }
 
 #english {
@@ -59,7 +75,8 @@ $small-font-size: .813rem;
     display: none;
 }
 
-@media screen and (max-width: 1050px) and (orientation: portrait) {
+
+/*@media screen and (max-width: 1050px) and (orientation: portrait) {
     .lang-switch__border {
         margin-top: 25px;
     }
@@ -69,9 +86,10 @@ $small-font-size: .813rem;
     .lang-switch__border {
         margin-top: 20px;
     }
-}
+}*/
 
-@media screen and (max-width: 500px) {
+
+/*@media screen and (max-width: 500px) {
     .lang-switch {
         font-size: 12px;
         &__border,
@@ -80,7 +98,7 @@ $small-font-size: .813rem;
             height: 50px;
         }
     }
-    .language {
+     .language {
         font-size: $small-font-size;
     }
-}
+}*/

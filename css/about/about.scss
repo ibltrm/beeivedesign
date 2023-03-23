@@ -1,16 +1,7 @@
 /*about section*/
 
-$title-color: #000;
-$first-color: #feb6ad;
-$big-font-size: 2rem;
-$h1-font-size: 1.5rem;
-$h2-font-size: 1.25rem;
-@media screen and (min-width: 968px) {
-    $big-font-size: 3rem;
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-}
-
+@import '../_mixins/mixins.scss';
+@import '../_root/root-styles.scss';
 #about {
     padding: 40px 0 0;
 }
@@ -29,6 +20,11 @@ $h2-font-size: 1.25rem;
         width: 40px;
         height: 40px;
         position: relative;
+        @include screen-size(screen-sm-max) {
+            width: 25x;
+            height: 35px;
+            top: 6px;
+        }
     }
     &__subtitle {
         font-size: 29px;
@@ -73,24 +69,14 @@ $h2-font-size: 1.25rem;
     }
 }
 
-@media screen and (max-width:635px) {
-    .skills-content {
-        display: block;
-        /*justify-content: center;*/
-        &__icon {
-            width: 200px;
-            max-height: 400px;
-        }
-    }
-}
 
-@media only screen and (max-width: 967px) {
+/*@media only screen and (max-width: 967px) {
     .about-1st-col__heart {
         width: 25x;
         height: 35px;
         top: 6px;
     }
-}
+}*/
 
 @media only screen and (max-width: 801px) {
     .about-1st-col {

@@ -6,7 +6,7 @@
 @import url("./navbar-large/navbar-large.css");
 @import url("./header-small/header-small.css");
 @import url("./lang-switch/lang-switch.css");
-@import url("./main-page/main-page.css");
+@import '../css/home-page/home.css';
 @import url(./about/about.css);
 @import url("./portfolio/portfolio.css");
 @import url("./contact/contact.css");
@@ -14,14 +14,8 @@
 @import url("./popup/popup.css");
 @import url(./spinner/spinner.css);
 @import url("./footer/footer.css");
-@import url("./_mixins/mixins.css");
-/* Root Element Style */
-/*-----Colors-----*/
-/*-----Font-size-----*/
-/*-----Font-weight-----*/
-/*-----Z-index-----*/
-/* Font size for large devices */
-/* General style */
+@import '../_root/root-styles.css';
+/* General style */ /*Root Element Style*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -98,13 +92,27 @@ img {
   flex-wrap: wrap;
   padding: 30px 30px 30px;
 }
-
-@media only screen and (max-width: 801px) {
+@media (max-width: 801px) {
   .row h1 {
     padding-top: 30px;
   }
 }
+
 .grid {
   display: grid;
   gap: 1.5rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*@import '../css/navbar-large/navbar-large.scss';
+@import '../css/header-small/header-small.scss';
+@import '../css/lang-switch/lang-switch.scss';
+@import '../css/home-page/home.scss';
+@import '../css/about/about.scss';
+@import '../css/portfolio/portfolio.scss';
+@import '../css/contact/contact.scss';
+@import '../css/email-validation/email-validation.scss';
+@import '../css/popup/popup.scss';
+@import '../css/spinner/spinner.scss';
+@import '../css/footer/footer.scss';
+@import '../css/_mixins/mixins.scss';
+@import '../css/shared-style/shared-style.scss';*//*# sourceMappingURL=style.css.map */
