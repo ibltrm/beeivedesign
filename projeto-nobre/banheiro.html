@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +10,10 @@
     <!-- swiperjs css file link-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="/css/banheiro.css">
+    <!--lightbox css file link-->
+    <link href="/node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link href="/node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -63,178 +62,118 @@
     </header>
     <!--navigation bar ends-->
 
-    <!--home section starts-->
-    <section class="home-container swiper mySwiper">
-        <div class="wrapper swiper-wrapper">
-            <div class="slide swiper-slide">
-                <img src="images/slide/slider-1.jpeg" alt="" class="img-slide">
-                <div class="home-content">
-                    <h2>
-                        Lorem ipsum dolor sit <br> amet consectetur
-                    </h2>
-                    <a href="projetos.html" class="button">Conheça</a>
-                </div>
-            </div>
-            <div class="slide swiper-slide">
-                <img src="images/slide/slider-2.jpg" alt="" class="img-slide">
-                <div class="home-content">
-                    <h2>
-                        Lorem ipsum dolor sit <br> amet consectetur
-                    </h2>
-                    <a href="projetos.html" class="button">Conheça</a>
-                </div>
-            </div>
-            <div class="slide swiper-slide">
-                <img src="images/slide/slider-3.jpeg" alt="" class="img-slide">
-                <div class="home-content">
-                    <h2>
-                        Lorem ipsum dolor sit <br> amet consectetur
-                    </h2>
-                    <a href="projetos.html" class="button">Conheça</a>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next nav-btn"></div>
-        <div class="swiper-button-prev nav-btn"></div>
-        <div class="swiper-pagination"></div>
-    </section>
-    <!--home section ends-->
-
-
-    <!--second section starts-->
-    <div class="mt-container title-main">
-        <div class="title">
-            <p>
-                Lorem ipsum dolor
-            </p>
-            <h2>
-                veniam autem laborum
-            </h2>
-            <hr>
-        </div>
-        <div class="container-flex">
-            <div class="mt-wrapper">
-                <div class="mt-image">
-                    <img src="images/1.png" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>
-                                aliquid eveniet
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-wrapper">
-                <div class="mt-image">
-                    <img src="images/2.png" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>
-                                lorem ipsum
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-wrapper">
-                <div class="mt-image">
-                    <img src="images/3.png" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>
-                                sit amet
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-wrapper">
-                <div class="mt-image">
-                    <img src="images/4.png" alt="">
-                    <div class="overlay">
-                        <div class="txt">
-                            <h3>
-                                eligendi sit
-                            </h3>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--second section ends-->
-
-
-    <!--third section starts  -->
-    <section class="split-row">
+    <!-- photo gallery starts -->
+    <div class="wrapper">
         <div class="title-main">
             <div class="title">
                 <p>
-                    Lorem ipsum dolor
+                    planejados
                 </p>
                 <h2>
-                    veniam autem laborum
+                    Banheiro
                 </h2>
                 <hr>
             </div>
         </div>
-
-
-        <div class="wrap-left">
-            <div class="image">
-                <img src="images/slide-img2.jpg" alt="">
+        <div class="gallery">
+            <div class="gallery__item gallery__item-1">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-1.jpeg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-1.jpeg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-            <div class="content">
-                <h3> <span>Projetos </span> Exclusivos </h3>
-                <p>Nossos projetos são desenvolvidos com exclusividade para o seu espaço. Dessa forma transformamos ambientes em cenários perfeitos para você viver momentos inesquecíveis.</p>
+            <div class="gallery__item gallery__item-2">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-2.jpeg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-2.jpeg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-        </div>
-
-        <div class="wrap-right">
-
-            <div class="content">
-                <h3> <span>Design de</span> Interiores </h3>
-                <p>Apresentamos em imagens tri dimensionais soluções arquitetônicas de ergonomia, decoração, estilo arquitetônico, definições de revestimentos, acabamentos, cores e outros itens, que irão caracterizar o projeto.</p>
+            <div class="gallery__item gallery__item-3">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-4.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-4.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-            <div class="image">
-                <img src="images/slide-img6.jpg" alt="">
+            <div class="gallery__item gallery__item-4">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-3.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-3.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-        </div>
-
-        <div class="wrap-left">
-            <div class="image">
-                <img src="images/slide-img1.jpg" alt="">
+            <div class="gallery__item gallery__item-5">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-6.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-6.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-            <div class="content">
-                <h3> <span>Lorem ipsum</span> laborum </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat iure illo, repudiandae rem porro sunt.</p>
+            <div class="gallery__item gallery__item-6">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-5.PNG" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-5.PNG" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
             </div>
-        </div>
-    </section>
-    <!--third section ends-->
-
-
-    <!--budget button-->
-    <div class="budget-container">
-        <div class="budget-text">
-            <h1>Solicite seu projeto</h1>
-        </div>
-
-        <div class="btn-container">
-            <a href="https:/wa.me/5511984170089?text=Olá, gostaria de solicitar um orçamento." class=" budget-btn btn-end">
-                <div id="btn-animation"></div>
-                <!--a href="#">Faça seu orçamento</a-->
-                <h2>Faça seu orçamento</h2>
-            </a>
+            <div class="gallery__item gallery__item-7">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-7.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-7.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item-8">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-8.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-8.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item-9">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-9.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-9.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item-10">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-10.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-10.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item-11">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-11.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-11.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item-12">
+                <a data-fslightbox href="images/projetos-img/banheiro/banheiro-12.jpg" class="gallery__link">
+                    <img src="images/projetos-img/banheiro/banheiro-12.jpg" class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-    <!--div class="button"><a class="end-btn" href="#">Solicite um orçamento</a></div-->
-    <!--budget button ends-->
 
     <!--footer starts-->
     <footer class="footer">
@@ -337,13 +276,7 @@
     </div>
     <!--footer ends-->
 
-
-    <!--scroll to top starts  -->
-    <div class="top">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <!--scroll to top ends-->
-
+    <script src="fslightbox-basic-3.4.1/fslightbox.js"></script>
 
 </body>
 
