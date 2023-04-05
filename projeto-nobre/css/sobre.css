@@ -273,7 +273,7 @@ img {
     content: attr(data-title);
     display: block;
     margin-bottom: 0.4rem;
-    color: #ffcc00;
+    color: #767676;
     font-size: 1.15rem;
     font-weight: 500;
     text-transform: uppercase;

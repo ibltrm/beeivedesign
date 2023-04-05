@@ -706,7 +706,8 @@
             position: absolute;
             height: 90vh;
             width: 35%;
-            background: rgba(0, 0, 0, .5);
+            background: #000/*rgba(0, 0, 0, .5)*/
+            ;
             top: 78px;
             right: -50%;
             text-align: center;
