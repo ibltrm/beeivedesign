@@ -695,7 +695,7 @@
     
     body::-webkit-scrollbar-thumb {
         background-color: #414141;
-        border-radius: 20px;
+        border-radius: 0px;
     }
     /*  MEDIA QUERY  */
     /*  NAVBAR  */
