@@ -228,6 +228,8 @@ img {
     font-size: 1.25rem;
     color: var(--black);
     line-height: 1.6;
+    word-break: keep-all;
+    text-align: justify;
 }
 
 .col-1 {

@@ -1,5 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
      :root {
         /*colors*/
         --black: #000;
@@ -201,6 +202,7 @@
         font-size: 3rem;
         font-weight: 600;
         color: #fff;
+        font-family: 'Playfair Display', serif;
     }
     
     a.button {
@@ -665,14 +667,14 @@
     
     .top {
         position: fixed;
-        bottom: 55px;
-        right: 30px;
+        bottom: 45px;
+        right: 20px;
         width: 40px;
         height: 40px;
         line-height: 40px;
         text-align: center;
         z-index: 122;
-        border: 1px solid #949494;
+        border: 1px solid #404040;
         border-radius: 50%;
         transition: .4s ease-in-out;
         cursor: pointer;
@@ -682,7 +684,7 @@
     .top i {
         font-size: 20px;
         vertical-align: middle;
-        color: #949494;
+        color: #404040;
     }
     
     .top:hover {
