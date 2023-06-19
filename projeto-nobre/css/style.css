@@ -725,7 +725,7 @@
             /*flex-direction: column;*/
             transition: .5s ease-in-out;
             flex-wrap: wrap;
-            overflow-x: scroll;
+            overflow-x: hidden;
         }
         header nav ul {
             display: block;
