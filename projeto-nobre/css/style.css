@@ -379,13 +379,14 @@
     
     .title-main .container-flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
     
     .container-flex .mt-wrapper {
-        width: 24.5%;
+        width: 28%;
         margin-bottom: 20px;
+        padding: 0 8px 0;
     }
     
     .container-flex .mt-wrapper img {
@@ -396,6 +397,7 @@
         display: flex;
         position: relative;
         height: 100%;
+       
     }
     
     .mt-image .overlay {
@@ -595,7 +597,7 @@
     
     .footer-col ul li a {
         font-size: 16px;
-        text-transform: capitalize;
+        /*text-transform: capitalize;*/
         color: #ffffff;
         text-decoration: none;
         font-weight: 300;
